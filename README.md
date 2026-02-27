@@ -72,10 +72,4 @@ Despite genre diversity (rap, trap, R&B, pop, bachata), the playlist exhibits co
 
 ---
 
-## Self-Similarity Matrix (Week 9)
 
-A feature-based self-similarity matrix reveals block structures, indicating clusters of songs with similar timbral and rhythmic characteristics. Despite genre differences, many tracks share comparable energy–valence profiles.
-
-### Interpretation
-
-The analysis suggests that musical preference may be organized around mood and sonic intensity rather than genre. This helps explain how artists as different as Michael Jackson and modern trap artists coexist within the same preference structure.

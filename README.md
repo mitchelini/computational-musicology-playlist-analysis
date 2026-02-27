@@ -15,3 +15,13 @@ A feature-based self-similarity matrix reveals block structures, indicating clus
 **Interpretation**
 
 The analysis suggests that musical preference may be organized around mood and sonic intensity rather than genre. This explains how artists as different as Michael Jackson and modern trap artists coexist within the same preference structure.
+
+## Correlation Analysis
+
+![Correlation Matrix](correlation_matrix.png)
+
+The correlation matrix shows a strong positive correlation between **Energy and Loudness (r = 0.75)** and a strong negative correlation between **Energy and Acousticness (r = -0.67)**.  
+
+This indicates that the playlist is structurally organized around **production intensity** rather than genre labels. High-energy tracks tend to be louder and less acoustic, while more acoustic tracks cluster at lower energy levels.  
+
+Despite genre diversity (rap, trap, R&B, pop, bachata), the playlist exhibits consistent audio-feature patterns centered on intensity and production style.

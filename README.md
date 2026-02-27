@@ -1,16 +1,16 @@
 # Computational Musicology – Playlist Analysis
 
-This project analyzes a personal Spotify playlist consisting of 101 favorite songs across multiple languages (Dutch, English), genres (rap, trap, R&B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna).
+This project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English & Spanish), genres (rap, trap, R&B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).
 
-Although the playlist appears stylistically diverse, feature-based analysis reveals structural consistencies.
+Although the playlist appears stylistically diverse, does feature-based analysis reveal structural consistencies?
 
 ---
 
 # Week 7 – Corpus Description & Spotify Feature Visualisation
 
-## Corpus Description (100–200 words)
+## Corpus Description
 
-The corpus consists of 101 tracks drawn from my personal Spotify favourites. The playlist spans Dutch and English repertoire and includes rap, drill, R&B, soul, pop, and alternative hip-hop. Rather than being curated around a single genre, the playlist reflects long-term listening habits, making it suitable for exploring whether perceived diversity aligns with measurable acoustic features.
+The corpus consists of 20 (later expended to 101) tracks drawn from my personal Spotify favourites. The playlist spans Dutch and English repertoire and includes rap, drill, R&B, soul, pop, and alternative hip-hop. Rather than being curated around a single genre, the playlist reflects long-term listening habits, making it suitable for exploring whether perceived diversity aligns with measurable acoustic features.
 
 The central research question is:
 

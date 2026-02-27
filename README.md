@@ -6,32 +6,6 @@ Although the playlist appears stylistically diverse, feature-based analysis reve
 
 ---
 
-## Correlation Analysis (Week 9)
-
-A correlation matrix of Spotify audio features (danceability, energy, valence, acousticness, etc.) shows strong relationships between energy and loudness, and moderate clustering of danceability across genres. This suggests that emotional intensity and rhythm play a stronger role in musical preference than genre labels.
-
-### Correlation Matrix
-
-![Correlation Matrix](correlation_matrix.png)
-
-The correlation matrix shows a strong positive correlation between **Energy and Loudness (r = 0.75)** and a strong negative correlation between **Energy and Acousticness (r = -0.67)**.
-
-This indicates that the playlist is structurally organized around **production intensity** rather than genre labels. High-energy tracks tend to be louder and less acoustic, while more acoustic tracks cluster at lower energy levels.
-
-Despite genre diversity (rap, trap, R&B, pop, bachata), the playlist exhibits consistent audio-feature patterns centered on intensity and production style.
-
----
-
-## Self-Similarity Matrix (Week 9)
-
-A feature-based self-similarity matrix reveals block structures, indicating clusters of songs with similar timbral and rhythmic characteristics. Despite genre differences, many tracks share comparable energy–valence profiles.
-
-### Interpretation
-
-The analysis suggests that musical preference may be organized around mood and sonic intensity rather than genre. This helps explain how artists as different as Michael Jackson and modern trap artists coexist within the same preference structure.
-
----
-
 # Week 7 – Corpus Description & Spotify Feature Visualisation
 
 ## Corpus Description (100–200 words)
@@ -74,10 +48,34 @@ Below is a chromagram of **“Wanderlust.”**
 
 ![Chromagram – Wanderlust](chroma_wanderlust.jpeg)
 
-## Description (100–200 words) + listening interpretation
+## Description + listening interpretation
 
 The chromagram visualises pitch-class intensity over time. Several pitch bands show recurring activation, suggesting a stable tonal centre with repeating harmonic material. This aligns with what I hear as structured repetition across sections (e.g., verse–chorus cycles), where the harmonic palette stays recognisable even when instrumentation and dynamics shift.
 
 Brighter horizontal regions indicate pitch classes that dominate the track’s harmonic content, while changes in intensity correspond to perceived transitions and build-ups. Compared with the Spotify-feature view (Week 7), which highlights rhythm and energy preferences, this chroma visualisation points to harmonic consistency inside an individual track. Sonically, the piece feels melodically anchored and loop-like in its progressions; the repeating chroma patterns support that perception by showing similar pitch distributions returning across time.
 
 ---
+
+## Correlation Analysis (Week 9)
+
+A correlation matrix of Spotify audio features (danceability, energy, valence, acousticness, etc.) shows strong relationships between energy and loudness, and moderate clustering of danceability across genres. This suggests that emotional intensity and rhythm play a stronger role in musical preference than genre labels.
+
+### Correlation Matrix
+
+![Correlation Matrix](correlation_matrix.png)
+
+The correlation matrix shows a strong positive correlation between **Energy and Loudness (r = 0.75)** and a strong negative correlation between **Energy and Acousticness (r = -0.67)**.
+
+This indicates that the playlist is structurally organized around **production intensity** rather than genre labels. High-energy tracks tend to be louder and less acoustic, while more acoustic tracks cluster at lower energy levels.
+
+Despite genre diversity (rap, trap, R&B, pop, bachata), the playlist exhibits consistent audio-feature patterns centered on intensity and production style.
+
+---
+
+## Self-Similarity Matrix (Week 9)
+
+A feature-based self-similarity matrix reveals block structures, indicating clusters of songs with similar timbral and rhythmic characteristics. Despite genre differences, many tracks share comparable energy–valence profiles.
+
+### Interpretation
+
+The analysis suggests that musical preference may be organized around mood and sonic intensity rather than genre. This helps explain how artists as different as Michael Jackson and modern trap artists coexist within the same preference structure.

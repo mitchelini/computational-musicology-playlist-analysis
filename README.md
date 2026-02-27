@@ -44,7 +44,7 @@ The visual design aims to reduce chart junk while maximizing information density
 
 For Week 8, I incorporated chroma features extracted using Sonic Visualiser. Chroma features represent pitch-class intensities (C, C#, D, etc.) over time and are useful for analysing harmonic structure beyond surface-level genre tags.
 
-Below is a chromagram of **“Wanderlust.”**
+Below is a chromagram of **“Wanderlust”** by The Weeknd
 
 ![Chromagram – Wanderlust](chroma_wanderlust.jpeg)
 

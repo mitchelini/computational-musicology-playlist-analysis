@@ -58,7 +58,7 @@ Brighter horizontal regions indicate pitch classes that dominate the track’s h
 
 ## Correlation Analysis (Week 9)
 
-A correlation matrix of Spotify audio features (danceability, energy, valence, acousticness, etc.) shows strong relationships between energy and loudness, and moderate clustering of danceability across genres. This suggests that emotional intensity and rhythm play a stronger role in musical preference than genre labels.
+A correlation matrix of Spotify audio features (danceability, energy, valence, acousticness, etc.) shows strong relationships between energy and loudness, and moderate clustering of danceability across genres. This suggests that emotional intensity and rhythm play a stronger role in my musical preference than genre labels.
 
 ### Correlation Matrix
 

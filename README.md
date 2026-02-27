@@ -72,4 +72,10 @@ Despite genre diversity (rap, trap, R&B, pop, bachata), the playlist exhibits co
 
 ---
 
+### Timbre-Based Self-Similarity Matrix (MFCC)
 
+![Timbre SSM – Wanderlust](timbre_ssm_wanderlust.png)
+
+This self-similarity matrix is computed using MFCC features, which capture timbral and production characteristics rather than pitch content. The strong diagonal reflects temporal continuity, while subtle block-like contrasts suggest sectional differentiation.
+
+Listening to the track, the harmonic loop feels relatively stable, but changes in production density and vocal layering mark transitions between sections. The MFCC-based SSM reflects this: the structure is visible, but less sharply segmented than what a pitch-based representation would show. This suggests that the track’s formal clarity is driven more by harmonic repetition than by radical timbral contrast.

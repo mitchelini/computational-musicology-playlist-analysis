@@ -1,0 +1,11 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Computational Musicology – Playlist Analysis"
+
+format:
+  html:
+    theme: cosmo
+    toc: true

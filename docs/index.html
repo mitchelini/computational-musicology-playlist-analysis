@@ -101,8 +101,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="playlist-analysis" class="level1">
-<h1>Playlist Analysis</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>This project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English &amp; Spanish), genres (rap, trap, R&amp;B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).</p>
@@ -192,13 +190,30 @@ ul.task-list li input[type="checkbox"] {
 <p>Listening to the track, the harmonic loop feels relatively stable, but changes in production density and vocal layering mark transitions between sections. The MFCC-based SSM reflects this: the structure is visible, but less sharply segmented than what a pitch-based representation would show. This suggests that the track’s formal clarity is driven more by harmonic repetition than by radical timbral contrast.</p>
 <hr>
 </section>
-<section id="key-chord-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="key-chord-analysis">Key / Chord Analysis</h2>
-<p>The harmonic evidence across the chromagram and the MFCC-based self-similarity matrix suggests that <strong>“Wanderlust”</strong> is organized around a relatively stable tonal centre rather than frequent modulation. Recurring pitch-class activity points to a repeating harmonic framework that remains recognisable across sections.</p>
-<p>In listening terms, the track feels loop-based: the chord material does not change radically, but instead supports continuity through repetition. This matters for the broader project because it shows that the coherence of the playlist is not only rhythmic or production-based, but also harmonic. Even within a stylistically mixed corpus, structural consistency can emerge through repeated tonal and chordal organization.</p>
-
-
+<section id="week-10-analysis-of-keys-or-chords" class="level2">
+<h2 class="anchored" data-anchor-id="week-10-analysis-of-keys-or-chords">Week 10 – Analysis of Keys or Chords</h2>
+<p>To extend the harmonic analysis, I estimated the tonal centre of one track in the corpus using a chroma-based pitch-class representation in R.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week10_key_heatmap.png" class="img-fluid figure-img"></p>
+<figcaption>Week 10 Key Heatmap</figcaption>
+</figure>
+</div>
+<p>The heatmap shows how pitch-class energy is distributed over time. Recurrent emphasis on the same pitch classes suggests harmonic stability rather than frequent modulation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week10_key_scores.png" class="img-fluid figure-img"></p>
+<figcaption>Week 10 Key Scores</figcaption>
+</figure>
+</div>
+<p>The key-profile comparison indicates the most likely global key for the track. Even if the estimate should be interpreted cautiously, it supports the idea that the track is organized around a relatively stable tonal centre and a repeating harmonic framework.</p>
+<hr>
 </section>
+<section id="week-11" class="level2">
+<h2 class="anchored" data-anchor-id="week-11">Week 11</h2>
+<hr>
+
+
 </section>
 
 </main> <!-- /main -->

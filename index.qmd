@@ -7,8 +7,6 @@ format:
     page-layout: article
 ---
 
-# Playlist Analysis
-
 ## Introduction
 
 This project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English & Spanish), genres (rap, trap, R&B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).
@@ -91,9 +89,20 @@ Listening to the track, the harmonic loop feels relatively stable, but changes i
 
 ---
 
-## Key / Chord Analysis
+## Week 10 – Analysis of Keys or Chords
 
-The harmonic evidence across the chromagram and the MFCC-based self-similarity matrix suggests that **“Wanderlust”** is organized around a relatively stable tonal centre rather than frequent modulation. Recurring pitch-class activity points to a repeating harmonic framework that remains recognisable across sections.
+To extend the harmonic analysis, I estimated the tonal centre of one track in the corpus using a chroma-based pitch-class representation in R.
 
-In listening terms, the track feels loop-based: the chord material does not change radically, but instead supports continuity through repetition. This matters for the broader project because it shows that the coherence of the playlist is not only rhythmic or production-based, but also harmonic. Even within a stylistically mixed corpus, structural consistency can emerge through repeated tonal and chordal organization.
+![Week 10 Key Heatmap](week10_key_heatmap.png)
 
+The heatmap shows how pitch-class energy is distributed over time. Recurrent emphasis on the same pitch classes suggests harmonic stability rather than frequent modulation.
+
+![Week 10 Key Scores](week10_key_scores.png)
+
+The key-profile comparison indicates the most likely global key for the track. Even if the estimate should be interpreted cautiously, it supports the idea that the track is organized around a relatively stable tonal centre and a repeating harmonic framework.
+
+---
+
+## Week 11
+
+---

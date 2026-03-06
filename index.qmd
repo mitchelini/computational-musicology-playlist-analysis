@@ -1,6 +1,10 @@
 ---
 title: "Computational Musicology – Playlist Analysis"
-format: dashboard
+format:
+  html:
+    theme: darkly
+    toc: false
+    page-layout: article
 ---
 
 # Playlist Analysis
@@ -92,3 +96,4 @@ Listening to the track, the harmonic loop feels relatively stable, but changes i
 The harmonic evidence across the chromagram and the MFCC-based self-similarity matrix suggests that **“Wanderlust”** is organized around a relatively stable tonal centre rather than frequent modulation. Recurring pitch-class activity points to a repeating harmonic framework that remains recognisable across sections.
 
 In listening terms, the track feels loop-based: the chord material does not change radically, but instead supports continuity through repetition. This matters for the broader project because it shows that the coherence of the playlist is not only rhythmic or production-based, but also harmonic. Even within a stylistically mixed corpus, structural consistency can emerge through repeated tonal and chordal organization.
+

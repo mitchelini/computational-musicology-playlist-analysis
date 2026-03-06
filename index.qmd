@@ -2,7 +2,10 @@
 title: "Computational Musicology – Playlist Analysis"
 format: dashboard
 ---
-# Computational Musicology – Playlist Analysis
+
+# Playlist Analysis
+
+## Introduction
 
 This project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English & Spanish), genres (rap, trap, R&B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).
 
@@ -10,9 +13,9 @@ Although the playlist appears stylistically diverse, does feature-based analysis
 
 ---
 
-# Week 7 – Corpus Description & Spotify Feature Visualisation
+## Week 7 – Corpus Description & Spotify Feature Visualisation
 
-## Corpus Description
+### Corpus Description
 
 The corpus consists of 20 (later expended to 101) tracks drawn from my personal Spotify favourites. The playlist spans Dutch and English repertoire and includes rap, drill, R&B, soul, pop, and alternative hip-hop. Rather than being curated around a single genre, the playlist reflects long-term listening habits, making it suitable for exploring whether perceived diversity aligns with measurable acoustic features.
 
@@ -22,9 +25,7 @@ The central research question is:
 
 Using Spotify’s track-level features (danceability, energy, popularity, etc.), this corpus allows comparison between genre labels and measurable musical properties. The dataset includes artists ranging from melodic rap and British drill to soul and Latin pop, providing contrast in rhythm, harmony, and production style while remaining part of a coherent personal listening profile.
 
----
-
-## Spotify Feature Visualisation (ggplot2)
+### Spotify Feature Visualisation (ggplot2)
 
 Below is a ggplot2 visualisation of track-level Spotify features:
 
@@ -44,7 +45,7 @@ The visual design aims to reduce chart junk while maximizing information density
 
 ---
 
-# Week 8 – Chroma Feature Visualisation (Sonic Visualiser)
+## Week 8 – Chroma Feature Visualisation (Sonic Visualiser)
 
 For Week 8, I incorporated chroma features extracted using Sonic Visualiser. Chroma features represent pitch-class intensities (C, C#, D, etc.) over time and are useful for analysing harmonic structure beyond surface-level genre tags.
 
@@ -52,7 +53,7 @@ Below is a chromagram of **“Wanderlust”** by The Weeknd
 
 ![Chromagram – Wanderlust](chroma_wanderlust.jpeg)
 
-## Description + listening interpretation
+### Description + listening interpretation
 
 The chromagram visualises pitch-class intensity over time. Several pitch bands show recurring activation, suggesting a stable tonal centre with repeating harmonic material. This aligns with what I hear as structured repetition across sections (e.g., verse–chorus cycles), where the harmonic palette stays recognisable even when instrumentation and dynamics shift.
 
@@ -76,10 +77,18 @@ Despite genre diversity (rap, trap, R&B, pop, bachata), the playlist exhibits co
 
 ---
 
-### Timbre-Based Self-Similarity Matrix (MFCC)
+## Timbre-Based Self-Similarity Matrix (MFCC)
 
 ![Timbre SSM – Wanderlust](timbre_ssm_wanderlust.png)
 
 This self-similarity matrix is computed using MFCC features, which capture timbral and production characteristics rather than pitch content. The strong diagonal reflects temporal continuity, while subtle block-like contrasts suggest sectional differentiation.
 
 Listening to the track, the harmonic loop feels relatively stable, but changes in production density and vocal layering mark transitions between sections. The MFCC-based SSM reflects this: the structure is visible, but less sharply segmented than what a pitch-based representation would show. This suggests that the track’s formal clarity is driven more by harmonic repetition than by radical timbral contrast.
+
+---
+
+## Key / Chord Analysis
+
+The harmonic evidence across the chromagram and the MFCC-based self-similarity matrix suggests that **“Wanderlust”** is organized around a relatively stable tonal centre rather than frequent modulation. Recurring pitch-class activity points to a repeating harmonic framework that remains recognisable across sections.
+
+In listening terms, the track feels loop-based: the chord material does not change radically, but instead supports continuity through repetition. This matters for the broader project because it shows that the coherence of the playlist is not only rhythmic or production-based, but also harmonic. Even within a stylistically mixed corpus, structural consistency can emerge through repeated tonal and chordal organization.

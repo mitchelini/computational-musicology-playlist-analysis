@@ -103,6 +103,18 @@ The key-profile comparison indicates the most likely global key for the track. E
 
 ---
 
-## Week 11
+## Week 11 – Rhythm and Tempo Analysis
+
+This week extends the dashboard with a rhythm-based perspective by focusing on tempo. Using Spotify’s tempo feature (measured in beats per minute), it becomes possible to analyse how fast or slow tracks are across the playlist.
+
+### Tempo Distribution in the Corpus
+
+![Histogram of tempi in the corpus](images/week11_tempo_histogram.png)
+
+The histogram shows that tempo values cluster within a relatively limited range rather than being evenly distributed. This suggests a consistent preference for a certain level of rhythmic energy across the playlist.
+
+This reinforces the broader finding of the project: although the playlist spans multiple genres and artists, computational features such as tempo reveal underlying consistency in listening behaviour.
 
 ---
+
+## Week 12 – ...

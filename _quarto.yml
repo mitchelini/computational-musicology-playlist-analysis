@@ -7,5 +7,6 @@ website:
 
 format:
   html:
-    theme: cosmo
-    toc: true
+    theme: darkly
+    toc: false
+    page-layout: article

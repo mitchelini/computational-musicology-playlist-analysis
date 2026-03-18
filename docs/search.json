@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "",
+    "text": "This project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English & Spanish), genres (rap, trap, R&B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).\nAlthough the playlist appears stylistically diverse, does feature-based analysis reveal structural consistencies?"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "",
+    "text": "This project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English & Spanish), genres (rap, trap, R&B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).\nAlthough the playlist appears stylistically diverse, does feature-based analysis reveal structural consistencies?"
+  },
+  {
+    "objectID": "index.html#week-7-corpus-description-spotify-feature-visualisation",
+    "href": "index.html#week-7-corpus-description-spotify-feature-visualisation",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "Week 7 – Corpus Description & Spotify Feature Visualisation",
+    "text": "Week 7 – Corpus Description & Spotify Feature Visualisation\n\nCorpus Description\nThe corpus consists of 20 (later expended to 101) tracks drawn from my personal Spotify favourites. The playlist spans Dutch and English repertoire and includes rap, drill, R&B, soul, pop, and alternative hip-hop. Rather than being curated around a single genre, the playlist reflects long-term listening habits, making it suitable for exploring whether perceived diversity aligns with measurable acoustic features.\nThe central research question is:\nDoes my seemingly diverse musical taste share structural similarities when examined through computational audio features?\nUsing Spotify’s track-level features (danceability, energy, popularity, etc.), this corpus allows comparison between genre labels and measurable musical properties. The dataset includes artists ranging from melodic rap and British drill to soul and Latin pop, providing contrast in rhythm, harmony, and production style while remaining part of a coherent personal listening profile.\n\n\nSpotify Feature Visualisation (ggplot2)\nBelow is a ggplot2 visualisation of track-level Spotify features:\n\nX-axis: Danceability\n\nY-axis: Energy\n\nPoint size: Popularity\n\nColour: Genre\n\nText labels: Selected outliers\n\n\n\n\nSpotify Feature Overview\n\n\n\n\nWhat I hear vs what the plot shows\nMost tracks cluster in the mid-to-high danceability range (roughly 0.6–0.8) with moderate energy. Listening-wise, this matches a clear preference for groove-forward tracks that stay rhythmically “driving,” even when genre and lyrical style change. Outliers (very low energy / acoustic-leaning tracks, or unusually high energy tracks) map onto moments in the playlist that feel like mood shifts rather than genre shifts.\nThe visual design aims to reduce chart junk while maximizing information density by encoding multiple variables in one plot (position, colour, size) and labeling notable tracks directly."
+  },
+  {
+    "objectID": "index.html#week-8-chroma-feature-visualisation-sonic-visualiser",
+    "href": "index.html#week-8-chroma-feature-visualisation-sonic-visualiser",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "Week 8 – Chroma Feature Visualisation (Sonic Visualiser)",
+    "text": "Week 8 – Chroma Feature Visualisation (Sonic Visualiser)\nFor Week 8, I incorporated chroma features extracted using Sonic Visualiser. Chroma features represent pitch-class intensities (C, C#, D, etc.) over time and are useful for analysing harmonic structure beyond surface-level genre tags.\nBelow is a chromagram of “Wanderlust” by The Weeknd\n\n\n\nChromagram – Wanderlust\n\n\n\nDescription + listening interpretation\nThe chromagram visualises pitch-class intensity over time. Several pitch bands show recurring activation, suggesting a stable tonal centre with repeating harmonic material. This aligns with what I hear as structured repetition across sections (e.g., verse–chorus cycles), where the harmonic palette stays recognisable even when instrumentation and dynamics shift.\nBrighter horizontal regions indicate pitch classes that dominate the track’s harmonic content, while changes in intensity correspond to perceived transitions and build-ups. Compared with the Spotify-feature view (Week 7), which highlights rhythm and energy preferences, this chroma visualisation points to harmonic consistency inside an individual track. Sonically, the piece feels melodically anchored and loop-like in its progressions; the repeating chroma patterns support that perception by showing similar pitch distributions returning across time."
+  },
+  {
+    "objectID": "index.html#correlation-analysis-week-9",
+    "href": "index.html#correlation-analysis-week-9",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "Correlation Analysis (Week 9)",
+    "text": "Correlation Analysis (Week 9)\nA correlation matrix of Spotify audio features (danceability, energy, valence, acousticness, etc.) shows strong relationships between energy and loudness, and moderate clustering of danceability across genres. This suggests that emotional intensity and rhythm play a stronger role in my musical preference than genre labels.\n\nCorrelation Matrix\n\n\n\nCorrelation Matrix\n\n\nThe correlation matrix shows a strong positive correlation between Energy and Loudness (r = 0.75) and a strong negative correlation between Energy and Acousticness (r = -0.67).\nThis indicates that the playlist is structurally organized around production intensity rather than genre labels. High-energy tracks tend to be louder and less acoustic, while more acoustic tracks cluster at lower energy levels.\nDespite genre diversity (rap, trap, R&B, pop, bachata), the playlist exhibits consistent audio-feature patterns centered on intensity and production style."
+  },
+  {
+    "objectID": "index.html#timbre-based-self-similarity-matrix-mfcc",
+    "href": "index.html#timbre-based-self-similarity-matrix-mfcc",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "Timbre-Based Self-Similarity Matrix (MFCC)",
+    "text": "Timbre-Based Self-Similarity Matrix (MFCC)\n\n\n\nTimbre SSM – Wanderlust\n\n\nThis self-similarity matrix is computed using MFCC features, which capture timbral and production characteristics rather than pitch content. The strong diagonal reflects temporal continuity, while subtle block-like contrasts suggest sectional differentiation.\nListening to the track, the harmonic loop feels relatively stable, but changes in production density and vocal layering mark transitions between sections. The MFCC-based SSM reflects this: the structure is visible, but less sharply segmented than what a pitch-based representation would show. This suggests that the track’s formal clarity is driven more by harmonic repetition than by radical timbral contrast."
+  },
+  {
+    "objectID": "index.html#week-10-analysis-of-keys-or-chords",
+    "href": "index.html#week-10-analysis-of-keys-or-chords",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "Week 10 – Analysis of Keys or Chords",
+    "text": "Week 10 – Analysis of Keys or Chords\nTo extend the harmonic analysis, I estimated the tonal centre of one track in the corpus using a chroma-based pitch-class representation in R.\n\n\n\nWeek 10 Key Heatmap\n\n\nThe heatmap shows how pitch-class energy is distributed over time. Recurrent emphasis on the same pitch classes suggests harmonic stability rather than frequent modulation.\n\n\n\nWeek 10 Key Scores\n\n\nThe key-profile comparison indicates the most likely global key for the track. Even if the estimate should be interpreted cautiously, it supports the idea that the track is organized around a relatively stable tonal centre and a repeating harmonic framework."
+  },
+  {
+    "objectID": "index.html#week-11",
+    "href": "index.html#week-11",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "Week 11",
+    "text": "Week 11"
+  }
+]

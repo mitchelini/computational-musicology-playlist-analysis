@@ -103,6 +103,18 @@ The key-profile comparison indicates the most likely global key for the track. E
 
 ---
 
-## Week 11
+## Week 11 – Rhythm and Tempo Analysis
+
+This week extends the dashboard with a rhythm-based perspective by focusing on tempo. Since the dataset includes Spotify audio features, tempo can be used as a measurable indicator of rhythmic pacing in the corpus. Expressed in beats per minute (BPM), it helps reveal whether the playlist is rhythmically varied or concentrated around a more limited range.
+
+### Tempo Distribution in the Corpus
+
+![Histogram of tempi in the corpus](week11_tempo_histogram.png)
+
+The histogram shows how tempo values are distributed across the playlist. If many tracks cluster within a similar BPM range, this suggests that the corpus has a degree of rhythmic consistency despite its stylistic diversity.
+
+This supports the broader idea behind the dashboard: even when the playlist spans multiple genres and artists, computational analysis can still reveal recurring musical preferences.
 
 ---
+
+## Week 12 –

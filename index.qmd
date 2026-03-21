@@ -125,7 +125,9 @@ I selected the track-level features Danceability, Energy, Valence, Tempo, Acoust
 
 The resulting dendrogram is shown below.
 
-![](week12_hierarchical_clustering_dendrogram.png)
+### Week 12 – Hierarchical Clustering of the Corpus
+
+![Ward’s method clustering](week12_hierarchical_clustering_dendrogram.png)
 
 The dendrogram reveals that the playlist is not a random collection of tracks, but contains clear structural groupings. At higher levels in the tree, the data splits into a few main clusters, indicating that certain groups of tracks are more similar to each other than to the rest of the corpus.
 

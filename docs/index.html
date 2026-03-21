@@ -225,10 +225,26 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 </section>
-<section id="week-12" class="level2">
-<h2 class="anchored" data-anchor-id="week-12">Week 12 –</h2>
+<section id="week-12-hierarchical-clustering" class="level2">
+<h2 class="anchored" data-anchor-id="week-12-hierarchical-clustering">Week 12 – Hierarchical Clustering</h2>
+<p>For Week 12, I applied hierarchical clustering to explore patterns in the class corpus based on Spotify audio features. Instead of using a supervised approach, hierarchical clustering allows the data itself to reveal natural groupings between tracks.</p>
+<p>I selected the track-level features Danceability, Energy, Valence, Tempo, Acousticness, Speechiness, and Liveness. Because these features are measured on different scales, they were first standardized. I then calculated Euclidean distances between tracks and applied hierarchical clustering using Ward’s method.</p>
+<p>The resulting dendrogram is shown below.</p>
+<section id="hierarchical-clustering-of-the-corpus" class="level3">
+<h3 class="anchored" data-anchor-id="hierarchical-clustering-of-the-corpus">Hierarchical Clustering of the Corpus</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week12_hierarchical_clustering_dendrogram.png" class="img-fluid figure-img"></p>
+<figcaption>Ward’s method clustering</figcaption>
+</figure>
+</div>
+<p>The dendrogram reveals that the playlist is not a random collection of tracks, but contains clear structural groupings. At higher levels in the tree, the data splits into a few main clusters, indicating that certain groups of tracks are more similar to each other than to the rest of the corpus.</p>
+<p>Although individual tracks are not easily readable due to the size of the dataset, the overall structure is still informative. The clustering suggests that the playlist can be divided into groups that likely reflect differences in musical characteristics such as energy, danceability, and acoustic qualities.</p>
+<p>To further interpret the clusters, I compared average feature values per group. This showed that some clusters contain more energetic and danceable tracks, while others are characterized by lower energy and higher acousticness. A third group appears to represent intermediate or mixed characteristics.</p>
+<p>Overall, hierarchical clustering provides a useful way to visualize similarity relationships within the corpus. The results demonstrate that even a diverse playlist contains underlying structure when analyzed using audio features.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

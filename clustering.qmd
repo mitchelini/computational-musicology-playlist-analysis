@@ -2,78 +2,74 @@
 title: "Clustering"
 ---
 
+This section examines whether the playlist contains meaningful internal structure when no explicit labels such as genre or artist are used.
+
+Clustering allows us to move beyond subjective listening and analyse how tracks group together purely based on their audio features.
+
+The analysis combines hierarchical clustering, a feature heatmap, and dimensionality reduction through PCA.
+
+## Dendrogram
+
 ![Hierarchical Clustering Dendrogram](dendrogram_clean.png)
+
+The dendrogram shows how tracks group together based on similarity across all selected audio features.
 
 ## Interpretation
 
-The dendrogram reveals a hierarchical structure in the playlist, where tracks group together based on similarity in their audio features. While the full tree is complex, a few broader clusters emerge at higher levels of the hierarchy.
+At higher levels of the tree, a small number of broader clusters emerge. However, the structure is not sharply divided. Many tracks merge gradually, indicating that differences between groups are subtle rather than clearly separated.
 
-## What this means
+This suggests that the playlist does not consist of distinct categories, but rather a continuum of musical characteristics.
 
-The playlist is not randomly organised. Instead, tracks are grouped according to shared characteristics such as energy, danceability, and acousticness.
-
-However, the clusters are not sharply separated. Many tracks merge gradually, indicating that differences between groups are subtle rather than absolute.
-
-## Connection to the research question
-
-This suggests that, despite stylistic diversity, the playlist contains underlying structure driven by measurable audio features rather than surface-level differences such as genre or artist.
+## Feature Heatmap
 
 ![Feature Heatmap (per track)](track_heatmap_clean.png)
 
+The heatmap provides a detailed view of how individual tracks behave across features such as energy, loudness, danceability, acousticness, instrumentalness, and tempo.
+
 ## Interpretation
 
-The heatmap shows how each track scores across the selected audio features. Clear patterns emerge across rows, where groups of tracks share similar feature profiles.
+Clear horizontal patterns appear, where groups of tracks share similar feature profiles. Some tracks are consistently high in energy and loudness, reflecting more production-heavy material. Others show higher acousticness or lower instrumentalness.
 
-For example, some tracks show consistently high energy and loudness, while others are characterised by higher acousticness or lower instrumentalness.
+Energy, loudness, acousticness, and instrumentalness show the strongest variation across tracks, while tempo remains relatively stable.
 
-## What this means
+This indicates that clustering is driven more by production intensity and texture than by tempo.
 
-The clustering is primarily driven by differences in production intensity and texture. Features such as energy, loudness, acousticness, and instrumentalness contribute most to separating groups.
-
-In contrast, features like tempo vary less strongly and therefore play a smaller role in defining clusters.
-
-## Connection to the research question
-
-The heatmap reinforces that structural similarities exist across the playlist. Even when tracks differ in style, they often share comparable feature patterns.
+## K-means Clustering
 
 ![K-means Clusters (k = 3)](kmeans_clusters.png)
 
+K-means clustering groups the tracks into three clusters and projects them into two dimensions using PCA.
+
 ## Interpretation
 
-The K-means clustering shows how tracks are grouped into three clusters when projected into two dimensions using PCA.
+The clusters are visible, but not cleanly separated. There is overlap between groups, with tracks positioned between cluster centres.
 
-The clusters are visible, but not cleanly separated. There is overlap between groups, indicating that tracks share characteristics across cluster boundaries.
+This indicates that the playlist forms a continuous feature space rather than clearly distinct categories.
 
-## What this means
-
-The absence of strict separation suggests that the playlist does not consist of distinct categories, but rather a continuous spectrum of musical characteristics.
-
-Clusters represent tendencies rather than fixed groupings.
-
-## Connection to the research question
-
-This supports the idea that structural consistency exists, but not in a rigid or categorical way. Instead, similarities are distributed gradually across the playlist.
+## PCA Representation
 
 ![PCA of Audio Features](pca_plot.png)
 
-## Interpretation
-
 The PCA plot shows the distribution of tracks across the two most important dimensions of variation.
 
-The first component (PC1) can be interpreted as a form of production intensity, while the second component (PC2) reflects differences in emotional tone and vocal presence.
+## Interpretation
 
-## What this means
+The first component (PC1) reflects production intensity, while the second component (PC2) represents variation in emotional tone and vocal presence.
 
-Tracks spread along these axes, but remain concentrated within a limited region. This indicates variation, but within a constrained space of musical characteristics.
-
-## Connection to the research question
-
-Even when reduced to its most important dimensions, the playlist shows controlled variation rather than randomness, reinforcing the presence of underlying structural consistency.
+Tracks spread along these axes, but remain concentrated within a limited region, indicating variation within a constrained feature space.
 
 ## Key Findings
 
-Clustering reveals that similarity within the playlist is driven primarily by audio features rather than explicit labels such as genre or artist.
+Clustering reveals that the playlist is structured, but not in a strictly categorical way.
 
-The dendrogram shows hierarchical grouping, while the heatmap highlights consistent feature patterns across tracks. K-means clustering and PCA further demonstrate that these groupings are not sharply separated, but form a continuous structure.
+The dendrogram shows hierarchical grouping, while the heatmap highlights consistent feature patterns across tracks. K-means clustering and PCA demonstrate that these groupings overlap rather than forming clearly separated clusters.
 
-Overall, the playlist exhibits **feature-driven organisation**, where differences emerge gradually across dimensions such as energy, acousticness, and instrumental texture, rather than forming clearly distinct categories.
+The most important distinctions between tracks are driven by production intensity and sonic texture, particularly reflected in energy, loudness, acousticness, and instrumentalness.
+
+## Connection to the Research Question
+
+Although the playlist appears diverse in terms of genre, language, and artist, the clustering analysis shows that this diversity is organised within a consistent feature space.
+
+Tracks do not group according to external labels, but according to shared structural characteristics. This indicates that underlying audio features play a stronger role in defining similarity than stylistic categories.
+
+As a result, the playlist exhibits underlying structural consistency, despite its apparent diversity.

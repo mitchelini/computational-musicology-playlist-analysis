@@ -2,38 +2,6 @@
 title: "Background & Corpus"
 ---
 
-```{r}
-library(tidyverse)
-library(DT)
-library(janitor)
-
-df <- read_csv("Computational_Musicology.csv") %>%
-  clean_names()
-
-corpus_explorer <- df %>%
-  select(
-    track_name,
-    artist_name_s,
-    genres,
-    popularity,
-    duration_ms,
-    danceability,
-    energy,
-    loudness,
-    speechiness,
-    acousticness,
-    liveness,
-    valence,
-    tempo,
-    instrumentalness
-  ) %>%
-  mutate(duration = round(duration_ms / 60000, 2)) %>%
-  select(-duration_ms) %>%
-  rename(
-    `track name` = track_name,
-    `artist name(s)` = artist_name_s
-  )```
-
 ## Research Question
 
 *Do my favorite songs share underlying patterns in Spotify audio features despite differences in genre, language, and artist?*
@@ -118,13 +86,9 @@ The goal is to determine whether subjective music preferences align with objecti
 
 This section provides an interactive overview of the dataset, allowing exploration of tracks and their audio features.
 
-```{r}
-datatable(
-  corpus_explorer,
-  options = list(
-    pageLength = 20,
-    scrollX = TRUE,
-    autoWidth = TRUE
-  ),
-  rownames = FALSE
-)```
+<iframe 
+src="corpus-explorer.html" 
+width="100%" 
+height="900" 
+style="border:none; border-radius:12px; overflow:hidden;">
+</iframe>

@@ -2,8 +2,6 @@
 title: "Track-level Features"
 ---
 
-# Track-level Features
-
 ![Spotify Feature Overview](Spotify_Feature_Overview.png)
 
 ## Interpretation

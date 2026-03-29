@@ -2,8 +2,6 @@
 title: "Timbre Features"
 ---
 
-# Timbre Features
-
 ![Timbre SSM – Wanderlust](timbre_ssm_wanderlust.png)
 
 ## Interpretation

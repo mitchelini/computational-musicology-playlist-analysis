@@ -2,18 +2,59 @@
 title: "Track-level Features"
 ---
 
-![Spotify Feature Overview](Spotify_Feature_Overview.png)
+This section examines Spotify’s track-level audio features to determine whether my favorite songs share consistent underlying characteristics, despite their diversity in genre, language, and artist.
 
-## Interpretation
+The analysis focuses on six key features: danceability, energy, valence, tempo, loudness, and popularity. Together, these features capture how music feels rhythmically, emotionally, and physically.
 
-Most tracks cluster in the mid-to-high danceability range (0.6–0.8) with moderate energy levels.
+## Feature Distributions Across the Playlist
 
-## What this means
+![Distribution of Danceability](distribution_danceability.png)
 
-Despite differences in genre and language, the playlist shows a clear preference for rhythmically engaging tracks with consistent groove and pacing.
+![Distribution of Tempo](tempo_distribution.png)
 
-Outliers correspond to perceptible mood shifts, rather than structural differences between genres.
+The distributions show that most tracks fall within a relatively narrow range of danceability, with a strong concentration in the mid-to-high range. This suggests a consistent preference for rhythmically engaging music.
 
-## Key Insight
+Tempo shows more variation, but still clusters around common ranges used in popular music. While the playlist spans multiple genres, it avoids extreme values, indicating a preference for familiarity in pacing.
 
-The playlist is not genre-driven, but **rhythm and energy driven**.
+## Core Relationship: Energy vs Valence
+
+![Energy vs Valence](energy_vs_valence.png)
+
+This plot shows the relationship between energy and valence across all tracks.
+
+While higher energy levels tend to correlate slightly with higher valence, the spread is wide. This indicates that tracks can be energetic without necessarily being emotionally positive.
+
+This variation suggests that emotional tone is flexible within the playlist, while energy remains a more consistent driver of preference.
+
+## Danceability vs Energy
+
+![Spotify Features of My Favorite Tracks](scatter_danceability_energy.png)
+
+This visualization combines multiple dimensions: danceability, energy, popularity, and genre.
+
+Most tracks cluster within a similar region of mid-to-high danceability and moderate energy, regardless of genre or language. This reinforces the idea that personal preference is not primarily genre-driven, but instead centered around rhythmic and structural characteristics.
+
+Outliers exist, but they reflect shifts in mood rather than entirely different listening preferences.
+
+## Feature Summary Statistics
+
+The table below provides summary statistics for all track-level features.
+
+<iframe 
+src="feature-summary.html" 
+width="100%" 
+height="400" 
+style="border:none;">
+</iframe>
+
+## Key Findings
+
+The playlist shows a clear pattern of consistency across several features.
+
+Danceability is relatively high and tightly distributed, indicating a strong preference for rhythmically engaging tracks. Energy is also consistently moderate to high, reinforcing this pattern.
+
+Valence shows more variation, suggesting that emotional tone is less important than rhythmic and structural qualities. Tempo varies more widely than expected, but still avoids extreme values.
+
+Overall, the results indicate that personal music preference is not random, but driven by a consistent set of underlying audio characteristics — particularly rhythm and energy.
+
+These patterns suggest that personal music preference is shaped more by consistent structural features than by genre or language.

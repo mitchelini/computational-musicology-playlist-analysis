@@ -32,8 +32,7 @@ corpus_explorer <- df %>%
   rename(
     `track name` = track_name,
     `artist name(s)` = artist_name_s
-  )
-```
+  )```
 
 ## Research Question
 
@@ -117,6 +116,9 @@ The goal is to determine whether subjective music preferences align with objecti
 
 ## Full Corpus Explorer
 
+This section provides an interactive overview of the dataset, allowing exploration of tracks and their audio features.
+
+```{r}
 datatable(
   corpus_explorer,
   options = list(
@@ -125,4 +127,4 @@ datatable(
     autoWidth = TRUE
   ),
   rownames = FALSE
-)
+)```

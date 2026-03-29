@@ -4,14 +4,35 @@
     "href": "index.html",
     "title": "Computational Musicology – Playlist Analysis",
     "section": "",
-    "text": "This project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English & Spanish), genres (rap, trap, R&B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).\nAlthough the playlist appears stylistically diverse, does feature-based analysis reveal structural consistencies?"
+    "text": "This corpus consists of 100+ tracks drawn from my personal Spotify listening history, spanning Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.\nRather than being curated by genre, the playlist reflects long-term listening behaviour, making it suitable for analysing whether perceived diversity aligns with measurable structural consistency."
+  },
+  {
+    "objectID": "index.html#description",
+    "href": "index.html#description",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "",
+    "text": "This corpus consists of 100+ tracks drawn from my personal Spotify listening history, spanning Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.\nRather than being curated by genre, the playlist reflects long-term listening behaviour, making it suitable for analysing whether perceived diversity aligns with measurable structural consistency."
+  },
+  {
+    "objectID": "index.html#research-question",
+    "href": "index.html#research-question",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "Research Question",
+    "text": "Research Question\nTo what extent does a stylistically diverse personal playlist exhibit underlying structural consistency in Spotify-derived audio features?"
+  },
+  {
+    "objectID": "index.html#assumptions",
+    "href": "index.html#assumptions",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "Assumptions",
+    "text": "Assumptions\n\nSpotify audio features approximate perceptual qualities (energy, valence, etc.)\nPersonal taste can be quantified through repeated listening patterns\nGenre labels are less informative than audio features"
   },
   {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "Computational Musicology – Playlist Analysis",
-    "section": "",
-    "text": "This project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English & Spanish), genres (rap, trap, R&B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).\nAlthough the playlist appears stylistically diverse, does feature-based analysis reveal structural consistencies?"
+    "section": "Introduction",
+    "text": "Introduction\nThis project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English & Spanish), genres (rap, trap, R&B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).\nAlthough the playlist appears stylistically diverse, does feature-based analysis reveal structural consistencies?"
   },
   {
     "objectID": "index.html#week-7-corpus-description-spotify-feature-visualisation",
@@ -49,10 +70,17 @@
     "text": "Week 10 – Analysis of Keys or Chords\nTo extend the harmonic analysis, I estimated the tonal centre of one track in the corpus using a chroma-based pitch-class representation in R.\n\n\n\nWeek 10 Key Heatmap\n\n\nThe heatmap shows how pitch-class energy is distributed over time. Recurrent emphasis on the same pitch classes suggests harmonic stability rather than frequent modulation.\n\n\n\nWeek 10 Key Scores\n\n\nThe key-profile comparison indicates the most likely global key for the track. Even if the estimate should be interpreted cautiously, it supports the idea that the track is organized around a relatively stable tonal centre and a repeating harmonic framework."
   },
   {
-    "objectID": "index.html#week-11",
-    "href": "index.html#week-11",
+    "objectID": "index.html#week-11-rhythm-and-tempo-analysis",
+    "href": "index.html#week-11-rhythm-and-tempo-analysis",
     "title": "Computational Musicology – Playlist Analysis",
-    "section": "Week 11",
-    "text": "Week 11"
+    "section": "Week 11 – Rhythm and Tempo Analysis",
+    "text": "Week 11 – Rhythm and Tempo Analysis\nThis week extends the dashboard with a rhythm-based perspective by focusing on tempo. Since the dataset includes Spotify audio features, tempo can be used as a measurable indicator of rhythmic pacing in the corpus. Expressed in beats per minute (BPM), it helps reveal whether the playlist is rhythmically varied or concentrated around a more limited range.\n\nTempo Distribution in the Corpus\n\n\n\nHistogram of tempi in the corpus\n\n\nThe histogram shows how tempo values are distributed across the playlist. If many tracks cluster within a similar BPM range, this suggests that the corpus has a degree of rhythmic consistency despite its stylistic diversity.\nThis supports the broader idea behind the dashboard: even when the playlist spans multiple genres and artists, computational analysis can still reveal recurring musical preferences."
+  },
+  {
+    "objectID": "index.html#week-12-hierarchical-clustering",
+    "href": "index.html#week-12-hierarchical-clustering",
+    "title": "Computational Musicology – Playlist Analysis",
+    "section": "Week 12 – Hierarchical Clustering",
+    "text": "Week 12 – Hierarchical Clustering\nFor Week 12, I applied hierarchical clustering to explore patterns in the class corpus based on Spotify audio features. Instead of using a supervised approach, hierarchical clustering allows the data itself to reveal natural groupings between tracks.\nI selected the track-level features Danceability, Energy, Valence, Tempo, Acousticness, Speechiness, and Liveness. Because these features are measured on different scales, they were first standardized. I then calculated Euclidean distances between tracks and applied hierarchical clustering using Ward’s method.\nThe resulting dendrogram is shown below.\n\nWeek 12 – Hierarchical Clustering of the Corpus\n\n\n\nWard’s method clustering\n\n\nThe dendrogram reveals that the playlist is not a random collection of tracks, but contains clear structural groupings. At higher levels in the tree, the data splits into a few main clusters, indicating that certain groups of tracks are more similar to each other than to the rest of the corpus.\nAlthough individual tracks are not easily readable due to the size of the dataset, the overall structure is still informative. The clustering suggests that the playlist can be divided into groups that likely reflect differences in musical characteristics such as energy, danceability, and acoustic qualities.\nTo further interpret the clusters, I compared average feature values per group. This showed that some clusters contain more energetic and danceable tracks, while others are characterized by lower energy and higher acousticness. A third group appears to represent intermediate or mixed characteristics.\nOverall, hierarchical clustering provides a useful way to visualize similarity relationships within the corpus. The results demonstrate that even a diverse playlist contains underlying structure when analyzed using audio features."
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Computational Musicology – Playlist Analysis</title>
+<title>clustering – Computational Musicology – Playlist Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="floating nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Corpus</span></a>
   </li>  
   <li class="nav-item">
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Temporal</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./clustering.html"> 
+    <a class="nav-link active" href="./clustering.html" aria-current="page"> 
 <span class="menu-text">Clustering</span></a>
   </li>  
   <li class="nav-item">
@@ -133,235 +133,18 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul class="collapse">
-  <li><a href="#my-corpus" id="toc-my-corpus" class="nav-link active" data-scroll-target="#my-corpus">🎧 My Corpus</a>
-  <ul class="collapse">
-  <li><a href="#playlist" id="toc-playlist" class="nav-link" data-scroll-target="#playlist">Playlist</a></li>
-  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
-  </ul></li>
-  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a>
-  <ul class="collapse">
-  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question</a></li>
-  <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions</a></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#week-7-corpus-description-spotify-feature-visualisation" id="toc-week-7-corpus-description-spotify-feature-visualisation" class="nav-link" data-scroll-target="#week-7-corpus-description-spotify-feature-visualisation">Week 7 – Corpus Description &amp; Spotify Feature Visualisation</a></li>
-  <li><a href="#week-8-chroma-feature-visualisation-sonic-visualiser" id="toc-week-8-chroma-feature-visualisation-sonic-visualiser" class="nav-link" data-scroll-target="#week-8-chroma-feature-visualisation-sonic-visualiser">Week 8 – Chroma Feature Visualisation (Sonic Visualiser)</a></li>
-  <li><a href="#correlation-analysis-week-9" id="toc-correlation-analysis-week-9" class="nav-link" data-scroll-target="#correlation-analysis-week-9">Correlation Analysis (Week 9)</a></li>
-  <li><a href="#timbre-based-self-similarity-matrix-mfcc" id="toc-timbre-based-self-similarity-matrix-mfcc" class="nav-link" data-scroll-target="#timbre-based-self-similarity-matrix-mfcc">Timbre-Based Self-Similarity Matrix (MFCC)</a></li>
-  <li><a href="#week-10-analysis-of-keys-or-chords" id="toc-week-10-analysis-of-keys-or-chords" class="nav-link" data-scroll-target="#week-10-analysis-of-keys-or-chords">Week 10 – Analysis of Keys or Chords</a></li>
-  <li><a href="#week-11-rhythm-and-tempo-analysis" id="toc-week-11-rhythm-and-tempo-analysis" class="nav-link" data-scroll-target="#week-11-rhythm-and-tempo-analysis">Week 11 – Rhythm and Tempo Analysis</a></li>
-  <li><a href="#week-12-hierarchical-clustering" id="toc-week-12-hierarchical-clustering" class="nav-link" data-scroll-target="#week-12-hierarchical-clustering">Week 12 – Hierarchical Clustering</a></li>
-  </ul></li>
-  </ul>
-</nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-    </div>
+    
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Computational Musicology – Playlist Analysis</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-page-right">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
 
-
-<section id="my-corpus" class="level1">
-<h1>🎧 My Corpus</h1>
-<section id="playlist" class="level2">
-<h2 class="anchored" data-anchor-id="playlist">Playlist</h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EYqSyCa48m0MQiTRQZgB6" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-</iframe>
-</section>
-<section id="description" class="level2">
-<h2 class="anchored" data-anchor-id="description">Description</h2>
-<p>This corpus consists of 100+ tracks drawn from my personal Spotify listening history, spanning Dutch, English, and Spanish repertoire across rap, trap, R&amp;B, pop, and soul.</p>
-<p>Rather than being curated by genre, the playlist reflects long-term listening behaviour, making it suitable for analysing whether perceived diversity aligns with measurable structural consistency.</p>
-<hr>
-</section>
-</section>
-<section id="background" class="level1">
-<h1>Background</h1>
-<section id="research-question" class="level2">
-<h2 class="anchored" data-anchor-id="research-question">Research Question</h2>
-<p>To what extent does a stylistically diverse personal playlist exhibit underlying structural consistency in Spotify-derived audio features?</p>
-</section>
-<section id="assumptions" class="level2">
-<h2 class="anchored" data-anchor-id="assumptions">Assumptions</h2>
-<ul>
-<li>Spotify audio features approximate perceptual qualities (energy, valence, etc.)</li>
-<li>Personal taste can be quantified through repeated listening patterns</li>
-<li>Genre labels are less informative than audio features</li>
-</ul>
-<hr>
-</section>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This project analyzes a personal Spotify playlist consisting of 100+ favorite songs across multiple languages (Dutch, English &amp; Spanish), genres (rap, trap, R&amp;B, pop), and artists (e.g., The Weeknd, Michael Jackson, Frenna, Coldplay, 2pac).</p>
-<p>Although the playlist appears stylistically diverse, does feature-based analysis reveal structural consistencies?</p>
-<hr>
-</section>
-<section id="week-7-corpus-description-spotify-feature-visualisation" class="level2">
-<h2 class="anchored" data-anchor-id="week-7-corpus-description-spotify-feature-visualisation">Week 7 – Corpus Description &amp; Spotify Feature Visualisation</h2>
-<section id="corpus-description" class="level3">
-<h3 class="anchored" data-anchor-id="corpus-description">Corpus Description</h3>
-<p>The corpus consists of 20 (later expended to 101) tracks drawn from my personal Spotify favourites. The playlist spans Dutch and English repertoire and includes rap, drill, R&amp;B, soul, pop, and alternative hip-hop. Rather than being curated around a single genre, the playlist reflects long-term listening habits, making it suitable for exploring whether perceived diversity aligns with measurable acoustic features.</p>
-<p>The central research question is:</p>
-<p><strong>Does my seemingly diverse musical taste share structural similarities when examined through computational audio features?</strong></p>
-<p>Using Spotify’s track-level features (danceability, energy, popularity, etc.), this corpus allows comparison between genre labels and measurable musical properties. The dataset includes artists ranging from melodic rap and British drill to soul and Latin pop, providing contrast in rhythm, harmony, and production style while remaining part of a coherent personal listening profile.</p>
-</section>
-<section id="spotify-feature-visualisation-ggplot2" class="level3">
-<h3 class="anchored" data-anchor-id="spotify-feature-visualisation-ggplot2">Spotify Feature Visualisation (ggplot2)</h3>
-<p>Below is a ggplot2 visualisation of track-level Spotify features:</p>
-<ul>
-<li><strong>X-axis:</strong> Danceability<br>
-</li>
-<li><strong>Y-axis:</strong> Energy<br>
-</li>
-<li><strong>Point size:</strong> Popularity<br>
-</li>
-<li><strong>Colour:</strong> Genre<br>
-</li>
-<li><strong>Text labels:</strong> Selected outliers</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Spotify_Feature_Overview.png" class="img-fluid figure-img"></p>
-<figcaption>Spotify Feature Overview</figcaption>
-</figure>
-</div>
-</section>
-<section id="what-i-hear-vs-what-the-plot-shows" class="level3">
-<h3 class="anchored" data-anchor-id="what-i-hear-vs-what-the-plot-shows">What I hear vs what the plot shows</h3>
-<p>Most tracks cluster in the mid-to-high danceability range (roughly 0.6–0.8) with moderate energy. Listening-wise, this matches a clear preference for groove-forward tracks that stay rhythmically “driving,” even when genre and lyrical style change. Outliers (very low energy / acoustic-leaning tracks, or unusually high energy tracks) map onto moments in the playlist that feel like mood shifts rather than genre shifts.</p>
-<p>The visual design aims to reduce chart junk while maximizing information density by encoding multiple variables in one plot (position, colour, size) and labeling notable tracks directly.</p>
-<hr>
-</section>
-</section>
-<section id="week-8-chroma-feature-visualisation-sonic-visualiser" class="level2">
-<h2 class="anchored" data-anchor-id="week-8-chroma-feature-visualisation-sonic-visualiser">Week 8 – Chroma Feature Visualisation (Sonic Visualiser)</h2>
-<p>For Week 8, I incorporated chroma features extracted using Sonic Visualiser. Chroma features represent pitch-class intensities (C, C#, D, etc.) over time and are useful for analysing harmonic structure beyond surface-level genre tags.</p>
-<p>Below is a chromagram of <strong>“Wanderlust”</strong> by The Weeknd</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="chroma_wanderlust.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Chromagram – Wanderlust</figcaption>
-</figure>
-</div>
-<section id="description-listening-interpretation" class="level3">
-<h3 class="anchored" data-anchor-id="description-listening-interpretation">Description + listening interpretation</h3>
-<p>The chromagram visualises pitch-class intensity over time. Several pitch bands show recurring activation, suggesting a stable tonal centre with repeating harmonic material. This aligns with what I hear as structured repetition across sections (e.g., verse–chorus cycles), where the harmonic palette stays recognisable even when instrumentation and dynamics shift.</p>
-<p>Brighter horizontal regions indicate pitch classes that dominate the track’s harmonic content, while changes in intensity correspond to perceived transitions and build-ups. Compared with the Spotify-feature view (Week 7), which highlights rhythm and energy preferences, this chroma visualisation points to harmonic consistency inside an individual track. Sonically, the piece feels melodically anchored and loop-like in its progressions; the repeating chroma patterns support that perception by showing similar pitch distributions returning across time.</p>
-<hr>
-</section>
-</section>
-<section id="correlation-analysis-week-9" class="level2">
-<h2 class="anchored" data-anchor-id="correlation-analysis-week-9">Correlation Analysis (Week 9)</h2>
-<p>A correlation matrix of Spotify audio features (danceability, energy, valence, acousticness, etc.) shows strong relationships between energy and loudness, and moderate clustering of danceability across genres. This suggests that emotional intensity and rhythm play a stronger role in my musical preference than genre labels.</p>
-<section id="correlation-matrix" class="level3">
-<h3 class="anchored" data-anchor-id="correlation-matrix">Correlation Matrix</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="correlation_matrix.png" class="img-fluid figure-img"></p>
-<figcaption>Correlation Matrix</figcaption>
-</figure>
-</div>
-<p>The correlation matrix shows a strong positive correlation between <strong>Energy and Loudness (r = 0.75)</strong> and a strong negative correlation between <strong>Energy and Acousticness (r = -0.67)</strong>.</p>
-<p>This indicates that the playlist is structurally organized around <strong>production intensity</strong> rather than genre labels. High-energy tracks tend to be louder and less acoustic, while more acoustic tracks cluster at lower energy levels.</p>
-<p>Despite genre diversity (rap, trap, R&amp;B, pop, bachata), the playlist exhibits consistent audio-feature patterns centered on intensity and production style.</p>
-<hr>
-</section>
-</section>
-<section id="timbre-based-self-similarity-matrix-mfcc" class="level2">
-<h2 class="anchored" data-anchor-id="timbre-based-self-similarity-matrix-mfcc">Timbre-Based Self-Similarity Matrix (MFCC)</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="timbre_ssm_wanderlust.png" class="img-fluid figure-img"></p>
-<figcaption>Timbre SSM – Wanderlust</figcaption>
-</figure>
-</div>
-<p>This self-similarity matrix is computed using MFCC features, which capture timbral and production characteristics rather than pitch content. The strong diagonal reflects temporal continuity, while subtle block-like contrasts suggest sectional differentiation.</p>
-<p>Listening to the track, the harmonic loop feels relatively stable, but changes in production density and vocal layering mark transitions between sections. The MFCC-based SSM reflects this: the structure is visible, but less sharply segmented than what a pitch-based representation would show. This suggests that the track’s formal clarity is driven more by harmonic repetition than by radical timbral contrast.</p>
-<hr>
-</section>
-<section id="week-10-analysis-of-keys-or-chords" class="level2">
-<h2 class="anchored" data-anchor-id="week-10-analysis-of-keys-or-chords">Week 10 – Analysis of Keys or Chords</h2>
-<p>To extend the harmonic analysis, I estimated the tonal centre of one track in the corpus using a chroma-based pitch-class representation in R.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="week10_key_heatmap.png" class="img-fluid figure-img"></p>
-<figcaption>Week 10 Key Heatmap</figcaption>
-</figure>
-</div>
-<p>The heatmap shows how pitch-class energy is distributed over time. Recurrent emphasis on the same pitch classes suggests harmonic stability rather than frequent modulation.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="week10_key_scores.png" class="img-fluid figure-img"></p>
-<figcaption>Week 10 Key Scores</figcaption>
-</figure>
-</div>
-<p>The key-profile comparison indicates the most likely global key for the track. Even if the estimate should be interpreted cautiously, it supports the idea that the track is organized around a relatively stable tonal centre and a repeating harmonic framework.</p>
-<hr>
-</section>
-<section id="week-11-rhythm-and-tempo-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="week-11-rhythm-and-tempo-analysis">Week 11 – Rhythm and Tempo Analysis</h2>
-<p>This week extends the dashboard with a rhythm-based perspective by focusing on tempo. Since the dataset includes Spotify audio features, tempo can be used as a measurable indicator of rhythmic pacing in the corpus. Expressed in beats per minute (BPM), it helps reveal whether the playlist is rhythmically varied or concentrated around a more limited range.</p>
-<section id="tempo-distribution-in-the-corpus" class="level3">
-<h3 class="anchored" data-anchor-id="tempo-distribution-in-the-corpus">Tempo Distribution in the Corpus</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="week11_tempo_histogram.png" class="img-fluid figure-img"></p>
-<figcaption>Histogram of tempi in the corpus</figcaption>
-</figure>
-</div>
-<p>The histogram shows how tempo values are distributed across the playlist. If many tracks cluster within a similar BPM range, this suggests that the corpus has a degree of rhythmic consistency despite its stylistic diversity.</p>
-<p>This supports the broader idea behind the dashboard: even when the playlist spans multiple genres and artists, computational analysis can still reveal recurring musical preferences.</p>
-<hr>
-</section>
-</section>
-<section id="week-12-hierarchical-clustering" class="level2">
-<h2 class="anchored" data-anchor-id="week-12-hierarchical-clustering">Week 12 – Hierarchical Clustering</h2>
-<p>For Week 12, I applied hierarchical clustering to explore patterns in the class corpus based on Spotify audio features. Instead of using a supervised approach, hierarchical clustering allows the data itself to reveal natural groupings between tracks.</p>
-<p>I selected the track-level features Danceability, Energy, Valence, Tempo, Acousticness, Speechiness, and Liveness. Because these features are measured on different scales, they were first standardized. I then calculated Euclidean distances between tracks and applied hierarchical clustering using Ward’s method.</p>
-<p>The resulting dendrogram is shown below.</p>
-<section id="week-12-hierarchical-clustering-of-the-corpus" class="level3">
-<h3 class="anchored" data-anchor-id="week-12-hierarchical-clustering-of-the-corpus">Week 12 – Hierarchical Clustering of the Corpus</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="week12_hierarchical_clustering_dendrogram.png" class="img-fluid figure-img"></p>
-<figcaption>Ward’s method clustering</figcaption>
-</figure>
-</div>
-<p>The dendrogram reveals that the playlist is not a random collection of tracks, but contains clear structural groupings. At higher levels in the tree, the data splits into a few main clusters, indicating that certain groups of tracks are more similar to each other than to the rest of the corpus.</p>
-<p>Although individual tracks are not easily readable due to the size of the dataset, the overall structure is still informative. The clustering suggests that the playlist can be divided into groups that likely reflect differences in musical characteristics such as energy, danceability, and acoustic qualities.</p>
-<p>To further interpret the clusters, I compared average feature values per group. This showed that some clusters contain more energetic and danceable tracks, while others are characterized by lower energy and higher acousticness. A third group appears to represent intermediate or mixed characteristics.</p>
-<p>Overall, hierarchical clustering provides a useful way to visualize similarity relationships within the corpus. The results demonstrate that even a diverse playlist contains underlying structure when analyzed using audio features.</p>
-
-
-</section>
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,49 +1,79 @@
 ---
-title: "Temporal Features"
+title: "Clustering"
 ---
 
-![Tempo Distribution vs Baseline](tempo_vs_baseline.png)
-
-## Tempo Distribution vs Baseline
-
-The distribution shows that tempo values in the corpus cluster within a narrower range compared to a broad baseline distribution. While the baseline spans a wide BPM spectrum, the playlist is clearly concentrated around a more limited tempo band.
+![Hierarchical Clustering Dendrogram](dendrogram_clean.png)
 
 ## Interpretation
 
-This suggests that tempo is not randomly distributed across the playlist, but reflects a consistent rhythmic preference. Rather than covering the full range of possible tempos, the corpus is constrained to a specific region commonly associated with popular music.
+The dendrogram reveals a hierarchical structure in the playlist, where tracks group together based on similarity in their audio features. While the full tree is complex, a few broader clusters emerge at higher levels of the hierarchy.
 
-![Tempo vs Danceability](tempo_danceability.png)
+## What this means
 
-## Tempo vs Danceability
+The playlist is not randomly organised. Instead, tracks are grouped according to shared characteristics such as energy, danceability, and acousticness.
 
-There is no strong relationship between tempo and danceability. Danceability values remain relatively stable across a wide range of tempos.
+However, the clusters are not sharply separated. Many tracks merge gradually, indicating that differences between groups are subtle rather than absolute.
 
-## Interpretation
+## Connection to the research question
 
-This indicates that rhythmic feel is not solely determined by tempo. Tracks with different BPM values can still achieve a similar level of perceived groove or movement. This suggests that other musical factors, such as rhythmic patterns or production style, contribute to danceability.
+This suggests that, despite stylistic diversity, the playlist contains underlying structure driven by measurable audio features rather than surface-level differences such as genre or artist.
 
-![Track Duration Distribution](duration_distribution.png)
-
-## Track Duration Distribution
-
-Track durations are concentrated within a relatively narrow range, with most tracks falling between approximately 2.5 and 4.5 minutes.
+![Feature Heatmap (per track)](track_heatmap_clean.png)
 
 ## Interpretation
 
-This suggests a consistent structural format across the playlist. Similar track lengths imply comparable segmentation, such as intro, verse, chorus, and outro sections, which are typical of contemporary popular music.
+The heatmap shows how each track scores across the selected audio features. Clear patterns emerge across rows, where groups of tracks share similar feature profiles.
+
+For example, some tracks show consistently high energy and loudness, while others are characterised by higher acousticness or lower instrumentalness.
+
+## What this means
+
+The clustering is primarily driven by differences in production intensity and texture. Features such as energy, loudness, acousticness, and instrumentalness contribute most to separating groups.
+
+In contrast, features like tempo vary less strongly and therefore play a smaller role in defining clusters.
+
+## Connection to the research question
+
+The heatmap reinforces that structural similarities exist across the playlist. Even when tracks differ in style, they often share comparable feature patterns.
+
+![K-means Clusters (k = 3)](kmeans_clusters.png)
+
+## Interpretation
+
+The K-means clustering shows how tracks are grouped into three clusters when projected into two dimensions using PCA.
+
+The clusters are visible, but not cleanly separated. There is overlap between groups, indicating that tracks share characteristics across cluster boundaries.
+
+## What this means
+
+The absence of strict separation suggests that the playlist does not consist of distinct categories, but rather a continuous spectrum of musical characteristics.
+
+Clusters represent tendencies rather than fixed groupings.
+
+## Connection to the research question
+
+This supports the idea that structural consistency exists, but not in a rigid or categorical way. Instead, similarities are distributed gradually across the playlist.
+
+![PCA of Audio Features](pca_plot.png)
+
+## Interpretation
+
+The PCA plot shows the distribution of tracks across the two most important dimensions of variation.
+
+The first component (PC1) can be interpreted as a form of production intensity, while the second component (PC2) reflects differences in emotional tone and vocal presence.
+
+## What this means
+
+Tracks spread along these axes, but remain concentrated within a limited region. This indicates variation, but within a constrained space of musical characteristics.
+
+## Connection to the research question
+
+Even when reduced to its most important dimensions, the playlist shows controlled variation rather than randomness, reinforcing the presence of underlying structural consistency.
 
 ## Key Findings
 
-Across all visualisations, temporal features show a clear pattern of consistency:
+Clustering reveals that similarity within the playlist is driven primarily by audio features rather than explicit labels such as genre or artist.
 
-- Tempo values are more concentrated than in a broad baseline distribution
-- Danceability remains stable across different tempos
-- Track durations follow a similar structural range
+The dendrogram shows hierarchical grouping, while the heatmap highlights consistent feature patterns across tracks. K-means clustering and PCA further demonstrate that these groupings are not sharply separated, but form a continuous structure.
 
-Together, these results indicate that temporal organisation is not random, but follows a consistent rhythmic and structural framework across the playlist.
-
-## Connection to the Research Question
-
-Although the playlist spans multiple genres and styles, the temporal analysis reveals a shared underlying structure.
-
-Rather than reflecting diversity in rhythmic organisation, the corpus shows consistency in tempo, groove, and track duration. This supports the idea that a stylistically diverse playlist can still exhibit strong structural coherence in its temporal features.
+Overall, the playlist exhibits **feature-driven organisation**, where differences emerge gradually across dimensions such as energy, acousticness, and instrumental texture, rather than forming clearly distinct categories.

@@ -2,8 +2,6 @@
 title: "Chroma Features"
 ---
 
-# Chroma Features
-
 ## Highlight Track: The Weeknd – Wanderlust
 
 ![Chromagram – Wanderlust](chroma_wanderlust.jpeg)

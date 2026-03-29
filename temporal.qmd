@@ -2,8 +2,6 @@
 title: "Temporal Features"
 ---
 
-# Temporal Features
-
 ![Tempo Histogram](week11_tempo_histogram.png)
 
 ## Interpretation

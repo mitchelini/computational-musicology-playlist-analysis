@@ -24,16 +24,22 @@ Rather than being curated by genre or artist, the playlist reflects individual l
 
 ## The Corpus
 
-The dataset spans Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.
+The dataset consists of 102 tracks drawn from a personal Spotify playlist, representing individual listening preferences rather than a curated or genre-specific selection.
 
-Despite this apparent diversity in genre, language, and artist, the key question is whether these tracks share common underlying characteristics.  
-This analysis focuses on identifying patterns that may explain why these songs are consistently preferred.
+The playlist spans multiple languages (English, Dutch, and Spanish) and includes a wide range of genres such as rap, R&B, drill, pop, and soul. This diversity makes the dataset particularly suitable for investigating whether consistent patterns exist beneath apparent stylistic variation.
+
+Although the playlist appears highly diverse, certain artists occur more frequently, including The Weeknd, Tory Lanez, Frenna, and Sevn Alias. This suggests that personal preference may already exhibit some degree of repetition at the artist level.
+
+It is important to note that this corpus is not a random or representative sample of music. Tracks were selected based on personal preference, which introduces bias toward songs that are more memorable, emotionally engaging, or frequently played.
+
+This makes the dataset especially relevant for exploring whether subjective taste can be explained through measurable audio features.
 
 ## Top Artists & Genres
 
 The playlist contains a wide range of artists and genres, but some occur more frequently than others.
 
 The top 5 most frequent artists are:
+
 - The Weeknd (12 tracks)  
 - Tory Lanez (6 tracks)  
 - Frenna (4 tracks)  
@@ -41,6 +47,7 @@ The top 5 most frequent artists are:
 - Brent Faiyaz (3 tracks)  
 
 In terms of genre, the top 3 occurring genres are:
+
 - Rap  
 - R&B  
 - Drill  
@@ -48,21 +55,22 @@ In terms of genre, the top 3 occurring genres are:
 At the same time, the playlist remains diverse, with many other artists and genres appearing less frequently.
 
 The dataset includes songs in three main languages:
+
 - English  
 - Dutch  
 - Spanish  
 
 ## Approach
 
-This project applies computational analysis to uncover patterns within the playlist.
+This project applies computational analysis to identify patterns within a diverse personal music playlist.
 
-Key steps include:
-- Extracting Spotify audio features (e.g. energy, danceability, tempo, valence)  
-- Analyzing distributions of these features across all tracks  
-- Identifying recurring patterns and potential clusters  
-- Comparing perceived diversity with measurable similarity  
+The analysis focuses on Spotify audio features such as danceability, energy, valence, tempo, and loudness to determine whether consistent characteristics emerge across the dataset.
 
-The goal is to determine whether subjective music preferences align with objective, data-driven characteristics.
+Feature distributions are examined to identify common ranges and tendencies, while relationships between variables are explored to detect underlying structure.
+
+In addition, clustering techniques are used to investigate whether the playlist naturally groups into sub-patterns based on audio similarity, regardless of genre or artist.
+
+The goal is to determine whether subjective listening preferences align with objective, data-driven patterns that are not immediately apparent through listening alone.
 
 ## Assumptions
 

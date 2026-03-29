@@ -1,1 +1,23 @@
+---
+title: "Loudness"
+---
 
+# Loudness & Energy
+
+![Correlation Matrix](correlation_matrix.png)
+
+## Interpretation
+
+Energy and loudness are strongly positively correlated (r = 0.75), while energy is negatively correlated with acousticness (r = -0.67).
+
+## What this means
+
+Tracks in the playlist are structured around production intensity. High-energy tracks tend to be louder and less acoustic, reflecting modern production styles.
+
+## Connection to the research question
+
+This suggests that the playlist is not only rhythmically consistent, but also consistent in its production characteristics.
+
+## Key Insight
+
+The playlist favours **high-energy, compressed production over acoustic variation**.

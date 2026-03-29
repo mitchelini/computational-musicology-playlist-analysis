@@ -1,1 +1,25 @@
+---
+title: "Clustering"
+---
 
+# Clustering
+
+![Clustering](week12_hierarchical_clustering_dendrogram.png)
+
+## Interpretation
+
+The dendrogram reveals clear groupings of tracks based on audio features.
+
+## What this means
+
+The playlist is not random, but structured around clusters of similar musical characteristics.
+
+Different clusters represent variations in energy, danceability, and acousticness.
+
+## Connection to the research question
+
+Even within a diverse playlist, tracks group together based on measurable feature similarity.
+
+## Key Insight
+
+Similarity in the playlist is driven by **audio features rather than genre labels**.

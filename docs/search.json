@@ -4,140 +4,161 @@
     "href": "track.html",
     "title": "Track-level Features",
     "section": "",
-    "text": "Spotify Feature Overview\n\n\n\n\nMost tracks cluster in the mid-to-high danceability range (0.6–0.8) with moderate energy levels.\n\n\n\nDespite differences in genre and language, the playlist shows a clear preference for rhythmically engaging tracks with consistent groove and pacing.\nOutliers correspond to perceptible mood shifts, rather than structural differences between genres.\n\n\n\nThe playlist is not genre-driven, but rhythm and energy driven."
+    "text": "Spotify Feature Overview"
   },
   {
     "objectID": "track.html#interpretation",
     "href": "track.html#interpretation",
     "title": "Track-level Features",
-    "section": "",
-    "text": "Most tracks cluster in the mid-to-high danceability range (0.6–0.8) with moderate energy levels."
+    "section": "Interpretation",
+    "text": "Interpretation\nMost tracks cluster in the mid-to-high danceability range (0.6–0.8) with moderate energy levels."
   },
   {
     "objectID": "track.html#what-this-means",
     "href": "track.html#what-this-means",
     "title": "Track-level Features",
-    "section": "",
-    "text": "Despite differences in genre and language, the playlist shows a clear preference for rhythmically engaging tracks with consistent groove and pacing.\nOutliers correspond to perceptible mood shifts, rather than structural differences between genres."
+    "section": "What this means",
+    "text": "What this means\nDespite differences in genre and language, the playlist shows a clear preference for rhythmically engaging tracks with consistent groove and pacing.\nOutliers correspond to perceptible mood shifts, rather than structural differences between genres."
   },
   {
     "objectID": "track.html#key-insight",
     "href": "track.html#key-insight",
     "title": "Track-level Features",
-    "section": "",
-    "text": "The playlist is not genre-driven, but rhythm and energy driven."
+    "section": "Key Insight",
+    "text": "Key Insight\nThe playlist is not genre-driven, but rhythm and energy driven."
   },
   {
     "objectID": "temporal.html",
     "href": "temporal.html",
     "title": "Temporal Features",
     "section": "",
-    "text": "Tempo Histogram\n\n\n\n\nTempo values cluster within a relatively narrow BPM range.\n\n\n\nDespite genre diversity, the playlist maintains a consistent rhythmic pacing.\n\n\n\nThis reinforces the idea that rhythmic structure is a unifying factor across the corpus.\n\n\n\nThe playlist shows rhythmic consistency across stylistically diverse tracks."
+    "text": "Tempo Histogram"
   },
   {
     "objectID": "temporal.html#interpretation",
     "href": "temporal.html#interpretation",
     "title": "Temporal Features",
-    "section": "",
-    "text": "Tempo values cluster within a relatively narrow BPM range."
+    "section": "Interpretation",
+    "text": "Interpretation\nTempo values cluster within a relatively narrow BPM range."
   },
   {
     "objectID": "temporal.html#what-this-means",
     "href": "temporal.html#what-this-means",
     "title": "Temporal Features",
-    "section": "",
-    "text": "Despite genre diversity, the playlist maintains a consistent rhythmic pacing."
+    "section": "What this means",
+    "text": "What this means\nDespite genre diversity, the playlist maintains a consistent rhythmic pacing."
   },
   {
     "objectID": "temporal.html#connection-to-the-research-question",
     "href": "temporal.html#connection-to-the-research-question",
     "title": "Temporal Features",
-    "section": "",
-    "text": "This reinforces the idea that rhythmic structure is a unifying factor across the corpus."
+    "section": "Connection to the research question",
+    "text": "Connection to the research question\nThis reinforces the idea that rhythmic structure is a unifying factor across the corpus."
   },
   {
     "objectID": "temporal.html#key-insight",
     "href": "temporal.html#key-insight",
     "title": "Temporal Features",
-    "section": "",
-    "text": "The playlist shows rhythmic consistency across stylistically diverse tracks."
+    "section": "Key Insight",
+    "text": "Key Insight\nThe playlist shows rhythmic consistency across stylistically diverse tracks."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Corpus & Background",
+    "title": "Background & Corpus",
     "section": "",
-    "text": "This corpus consists of 100+ tracks drawn from my personal Spotify listening history, spanning Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.\nRather than being curated by genre, the playlist reflects long-term listening behaviour. This makes it suitable for analysing whether perceived stylistic diversity corresponds to measurable structural consistency."
-  },
-  {
-    "objectID": "index.html#description",
-    "href": "index.html#description",
-    "title": "Corpus & Background",
-    "section": "",
-    "text": "This corpus consists of 100+ tracks drawn from my personal Spotify listening history, spanning Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.\nRather than being curated by genre, the playlist reflects long-term listening behaviour. This makes it suitable for analysing whether perceived stylistic diversity corresponds to measurable structural consistency."
-  },
-  {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Corpus & Background",
-    "section": "Introduction",
-    "text": "Introduction\nThis project analyzes a personal Spotify playlist consisting of over 100 tracks across multiple languages and genres, including rap, trap, R&B, and pop. Artists range from The Weeknd and Michael Jackson to Frenna, Coldplay, and 2Pac.\nAlthough the playlist appears stylistically diverse, this analysis investigates whether underlying musical features reveal a more consistent structure."
+    "text": "library(tidyverse)\n\nWarning: package 'tidyverse' was built under R version 4.5.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.2.0\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(DT)\n\nWarning: package 'DT' was built under R version 4.5.3\n\nlibrary(janitor)\n\nWarning: package 'janitor' was built under R version 4.5.3\n\n\n\nAttaching package: 'janitor'\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\ndf &lt;- read_csv(\"Computational_Musicology.csv\") %&gt;%\n  clean_names()\n\nRows: 102 Columns: 24\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr   (7): Track URI, Track Name, Album Name, Artist Name(s), Added By, Genr...\ndbl  (14): Duration (ms), Popularity, Danceability, Energy, Key, Loudness, M...\nlgl   (1): Explicit\ndttm  (1): Added At\ndate  (1): Release Date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\ncorpus_explorer &lt;- df %&gt;%\n  select(\n    track_name,\n    artist_name_s,\n    genres,\n    popularity,\n    duration_ms,\n    danceability,\n    energy,\n    loudness,\n    speechiness,\n    acousticness,\n    liveness,\n    valence,\n    tempo,\n    instrumentalness\n  ) %&gt;%\n  mutate(duration = round(duration_ms / 60000, 2)) %&gt;%\n  select(-duration_ms) %&gt;%\n  rename(\n    `track name` = track_name,\n    `artist name(s)` = artist_name_s\n  )"
   },
   {
     "objectID": "index.html#research-question",
     "href": "index.html#research-question",
-    "title": "Corpus & Background",
+    "title": "Background & Corpus",
     "section": "Research Question",
-    "text": "Research Question\nTo what extent does a stylistically diverse personal playlist exhibit underlying structural consistency in Spotify-derived audio features?"
+    "text": "Research Question\nDo my favorite songs share underlying patterns in Spotify audio features despite differences in genre, language, and artist?\nThis project explores whether personal music preferences can be explained through measurable audio characteristics, using a playlist of my 100+ favorite tracks."
+  },
+  {
+    "objectID": "index.html#the-playlist",
+    "href": "index.html#the-playlist",
+    "title": "Background & Corpus",
+    "section": "The Playlist",
+    "text": "The Playlist\n\n\n\n\nThe corpus is based on a personal Spotify playlist consisting of over 100 tracks.\nRather than being curated by genre or artist, the playlist reflects individual listening preferences — songs that stand out as favorites over time."
+  },
+  {
+    "objectID": "index.html#the-corpus",
+    "href": "index.html#the-corpus",
+    "title": "Background & Corpus",
+    "section": "The Corpus",
+    "text": "The Corpus\nThe dataset spans Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.\nDespite this apparent diversity in genre, language, and artist, the key question is whether these tracks share common underlying characteristics.\nThis analysis focuses on identifying patterns that may explain why these songs are consistently preferred."
+  },
+  {
+    "objectID": "index.html#top-artists-genres",
+    "href": "index.html#top-artists-genres",
+    "title": "Background & Corpus",
+    "section": "Top Artists & Genres",
+    "text": "Top Artists & Genres\nThe playlist contains a wide range of artists and genres, but some occur more frequently than others.\nThe top 5 most frequent artists are: - The Weeknd (12 tracks)\n- Tory Lanez (6 tracks)\n- Frenna (4 tracks)\n- Sevn Alias (4 tracks)\n- Brent Faiyaz (3 tracks)\nIn terms of genre, the top 3 occurring genres are: - Rap\n- R&B\n- Drill\nAt the same time, the playlist remains diverse, with many other artists and genres appearing less frequently.\nThe dataset includes songs in three main languages: - English\n- Dutch\n- Spanish"
+  },
+  {
+    "objectID": "index.html#approach",
+    "href": "index.html#approach",
+    "title": "Background & Corpus",
+    "section": "Approach",
+    "text": "Approach\nThis project applies computational analysis to uncover patterns within the playlist.\nKey steps include: - Extracting Spotify audio features (e.g. energy, danceability, tempo, valence)\n- Analyzing distributions of these features across all tracks\n- Identifying recurring patterns and potential clusters\n- Comparing perceived diversity with measurable similarity\nThe goal is to determine whether subjective music preferences align with objective, data-driven characteristics."
   },
   {
     "objectID": "index.html#assumptions",
     "href": "index.html#assumptions",
-    "title": "Corpus & Background",
+    "title": "Background & Corpus",
     "section": "Assumptions",
-    "text": "Assumptions\n\nSpotify audio features approximate perceptual musical qualities such as energy, mood, and rhythm\n\nPersonal listening behaviour reflects consistent preferences that can be quantified\n\nGenre labels are less informative than feature-based representations"
+    "text": "Assumptions\n\nSpotify audio features approximate perceptual musical qualities\n\nPersonal listening preferences reflect underlying patterns that can be quantified\n\nFeature-based analysis provides deeper insight than genre labels alone"
+  },
+  {
+    "objectID": "index.html#full-corpus-explorer",
+    "href": "index.html#full-corpus-explorer",
+    "title": "Background & Corpus",
+    "section": "Full Corpus Explorer",
+    "text": "Full Corpus Explorer\ndatatable( corpus_explorer, options = list( pageLength = 20, scrollX = TRUE, autoWidth = TRUE ), rownames = FALSE )"
   },
   {
     "objectID": "clustering.html",
     "href": "clustering.html",
     "title": "Clustering",
     "section": "",
-    "text": "Clustering\n\n\n\n\nThe dendrogram reveals clear groupings of tracks based on audio features.\n\n\n\nThe playlist is not random, but structured around clusters of similar musical characteristics.\nDifferent clusters represent variations in energy, danceability, and acousticness.\n\n\n\nEven within a diverse playlist, tracks group together based on measurable feature similarity.\n\n\n\nSimilarity in the playlist is driven by audio features rather than genre labels."
+    "text": "Clustering"
   },
   {
     "objectID": "clustering.html#interpretation",
     "href": "clustering.html#interpretation",
     "title": "Clustering",
-    "section": "",
-    "text": "The dendrogram reveals clear groupings of tracks based on audio features."
+    "section": "Interpretation",
+    "text": "Interpretation\nThe dendrogram reveals clear groupings of tracks based on audio features."
   },
   {
     "objectID": "clustering.html#what-this-means",
     "href": "clustering.html#what-this-means",
     "title": "Clustering",
-    "section": "",
-    "text": "The playlist is not random, but structured around clusters of similar musical characteristics.\nDifferent clusters represent variations in energy, danceability, and acousticness."
+    "section": "What this means",
+    "text": "What this means\nThe playlist is not random, but structured around clusters of similar musical characteristics.\nDifferent clusters represent variations in energy, danceability, and acousticness."
   },
   {
     "objectID": "clustering.html#connection-to-the-research-question",
     "href": "clustering.html#connection-to-the-research-question",
     "title": "Clustering",
-    "section": "",
-    "text": "Even within a diverse playlist, tracks group together based on measurable feature similarity."
+    "section": "Connection to the research question",
+    "text": "Connection to the research question\nEven within a diverse playlist, tracks group together based on measurable feature similarity."
   },
   {
     "objectID": "clustering.html#key-insight",
     "href": "clustering.html#key-insight",
     "title": "Clustering",
-    "section": "",
-    "text": "Similarity in the playlist is driven by audio features rather than genre labels."
+    "section": "Key Insight",
+    "text": "Key Insight\nSimilarity in the playlist is driven by audio features rather than genre labels."
   },
   {
     "objectID": "chroma.html",
     "href": "chroma.html",
     "title": "Chroma Features",
     "section": "",
-    "text": "Chromagram – Wanderlust\n\n\n\n\n\nThe chromagram shows recurring activation of specific pitch classes over time, indicating a stable tonal centre and repeated harmonic patterns.\n\n\n\nRather than exhibiting harmonic complexity or frequent modulation, the track relies on loop-based harmonic structures. These repeating pitch distributions align with a consistent and recognisable musical foundation.\n\n\n\nAlthough the playlist appears stylistically diverse, this suggests that harmonic behaviour may be more consistent than expected across tracks.\n\n\n\nThe playlist shows harmonic consistency through stable tonal centres and repetition."
+    "text": "Chromagram – Wanderlust"
   },
   {
     "objectID": "chroma.html#highlight-track-the-weeknd-wanderlust",
@@ -150,36 +171,36 @@
     "objectID": "chroma.html#interpretation",
     "href": "chroma.html#interpretation",
     "title": "Chroma Features",
-    "section": "",
-    "text": "The chromagram shows recurring activation of specific pitch classes over time, indicating a stable tonal centre and repeated harmonic patterns."
+    "section": "Interpretation",
+    "text": "Interpretation\nThe chromagram shows recurring activation of specific pitch classes over time, indicating a stable tonal centre and repeated harmonic patterns."
   },
   {
     "objectID": "chroma.html#what-this-means",
     "href": "chroma.html#what-this-means",
     "title": "Chroma Features",
-    "section": "",
-    "text": "Rather than exhibiting harmonic complexity or frequent modulation, the track relies on loop-based harmonic structures. These repeating pitch distributions align with a consistent and recognisable musical foundation."
+    "section": "What this means",
+    "text": "What this means\nRather than exhibiting harmonic complexity or frequent modulation, the track relies on loop-based harmonic structures. These repeating pitch distributions align with a consistent and recognisable musical foundation."
   },
   {
     "objectID": "chroma.html#connection-to-the-research-question",
     "href": "chroma.html#connection-to-the-research-question",
     "title": "Chroma Features",
-    "section": "",
-    "text": "Although the playlist appears stylistically diverse, this suggests that harmonic behaviour may be more consistent than expected across tracks."
+    "section": "Connection to the research question",
+    "text": "Connection to the research question\nAlthough the playlist appears stylistically diverse, this suggests that harmonic behaviour may be more consistent than expected across tracks."
   },
   {
     "objectID": "chroma.html#key-insight",
     "href": "chroma.html#key-insight",
     "title": "Chroma Features",
-    "section": "",
-    "text": "The playlist shows harmonic consistency through stable tonal centres and repetition."
+    "section": "Key Insight",
+    "text": "Key Insight\nThe playlist shows harmonic consistency through stable tonal centres and repetition."
   },
   {
     "objectID": "contribution.html",
     "href": "contribution.html",
     "title": "Contribution",
     "section": "",
-    "text": "Although the playlist appears stylistically diverse, multiple analyses reveal consistent patterns across tracks.\nThese include: - stable energy levels\n- consistent tempo ranges\n- harmonic repetition\n- similar production characteristics\n\n\n\nThis suggests that personal music taste is not primarily genre-based, but driven by deeper structural features such as rhythm, energy, and production style.\n\n\n\n\nMusic recommendation systems could benefit from focusing on feature similarity rather than genre labels\n\nPersonal playlists may contain hidden structure despite apparent diversity\n\n\n\n\nThis playlist is not a collection of different genres — it is a coherent system shaped by consistent musical preferences."
+    "text": "Although the playlist appears stylistically diverse, multiple analyses reveal consistent patterns across tracks.\nThese include: - stable energy levels\n- consistent tempo ranges\n- harmonic repetition\n- similar production characteristics"
   },
   {
     "objectID": "contribution.html#what-did-we-learn",
@@ -192,91 +213,91 @@
     "objectID": "contribution.html#why-does-this-matter",
     "href": "contribution.html#why-does-this-matter",
     "title": "Contribution",
-    "section": "",
-    "text": "This suggests that personal music taste is not primarily genre-based, but driven by deeper structural features such as rhythm, energy, and production style."
+    "section": "Why does this matter?",
+    "text": "Why does this matter?\nThis suggests that personal music taste is not primarily genre-based, but driven by deeper structural features such as rhythm, energy, and production style."
   },
   {
     "objectID": "contribution.html#implications",
     "href": "contribution.html#implications",
     "title": "Contribution",
-    "section": "",
-    "text": "Music recommendation systems could benefit from focusing on feature similarity rather than genre labels\n\nPersonal playlists may contain hidden structure despite apparent diversity"
+    "section": "Implications",
+    "text": "Implications\n\nMusic recommendation systems could benefit from focusing on feature similarity rather than genre labels\n\nPersonal playlists may contain hidden structure despite apparent diversity"
   },
   {
     "objectID": "contribution.html#final-insight",
     "href": "contribution.html#final-insight",
     "title": "Contribution",
-    "section": "",
-    "text": "This playlist is not a collection of different genres — it is a coherent system shaped by consistent musical preferences."
+    "section": "Final Insight",
+    "text": "Final Insight\nThis playlist is not a collection of different genres — it is a coherent system shaped by consistent musical preferences."
   },
   {
     "objectID": "loudness.html",
     "href": "loudness.html",
-    "title": "Loudness",
+    "title": "Loudness & Energy",
     "section": "",
-    "text": "Correlation Matrix\n\n\n\n\nEnergy and loudness are strongly positively correlated (r = 0.75), while energy is negatively correlated with acousticness (r = -0.67).\n\n\n\nTracks in the playlist are structured around production intensity. High-energy tracks tend to be louder and less acoustic, reflecting modern production styles.\n\n\n\nThis suggests that the playlist is not only rhythmically consistent, but also consistent in its production characteristics.\n\n\n\nThe playlist favours high-energy, compressed production over acoustic variation."
+    "text": "Correlation Matrix"
   },
   {
     "objectID": "loudness.html#interpretation",
     "href": "loudness.html#interpretation",
-    "title": "Loudness",
-    "section": "",
-    "text": "Energy and loudness are strongly positively correlated (r = 0.75), while energy is negatively correlated with acousticness (r = -0.67)."
+    "title": "Loudness & Energy",
+    "section": "Interpretation",
+    "text": "Interpretation\nEnergy and loudness are strongly positively correlated (r = 0.75), while energy is negatively correlated with acousticness (r = -0.67)."
   },
   {
     "objectID": "loudness.html#what-this-means",
     "href": "loudness.html#what-this-means",
-    "title": "Loudness",
-    "section": "",
-    "text": "Tracks in the playlist are structured around production intensity. High-energy tracks tend to be louder and less acoustic, reflecting modern production styles."
+    "title": "Loudness & Energy",
+    "section": "What this means",
+    "text": "What this means\nTracks in the playlist are structured around production intensity. High-energy tracks tend to be louder and less acoustic, reflecting modern production styles."
   },
   {
     "objectID": "loudness.html#connection-to-the-research-question",
     "href": "loudness.html#connection-to-the-research-question",
-    "title": "Loudness",
-    "section": "",
-    "text": "This suggests that the playlist is not only rhythmically consistent, but also consistent in its production characteristics."
+    "title": "Loudness & Energy",
+    "section": "Connection to the research question",
+    "text": "Connection to the research question\nThis suggests that the playlist is not only rhythmically consistent, but also consistent in its production characteristics."
   },
   {
     "objectID": "loudness.html#key-insight",
     "href": "loudness.html#key-insight",
-    "title": "Loudness",
-    "section": "",
-    "text": "The playlist favours high-energy, compressed production over acoustic variation."
+    "title": "Loudness & Energy",
+    "section": "Key Insight",
+    "text": "Key Insight\nThe playlist favours high-energy, compressed production over acoustic variation."
   },
   {
     "objectID": "timbre.html",
     "href": "timbre.html",
     "title": "Timbre Features",
     "section": "",
-    "text": "Timbre SSM – Wanderlust\n\n\n\n\nThe self-similarity matrix shows strong temporal continuity with subtle structural segmentation.\n\n\n\nChanges in timbre are gradual rather than abrupt. Structural transitions are driven more by layering and density than by strong timbral contrast.\n\n\n\nThis suggests that timbre is not the primary driver of variation within the playlist.\n\n\n\nStructure is shaped more by harmonic repetition than timbral contrast."
+    "text": "Timbre SSM – Wanderlust"
   },
   {
     "objectID": "timbre.html#interpretation",
     "href": "timbre.html#interpretation",
     "title": "Timbre Features",
-    "section": "",
-    "text": "The self-similarity matrix shows strong temporal continuity with subtle structural segmentation."
+    "section": "Interpretation",
+    "text": "Interpretation\nThe self-similarity matrix shows strong temporal continuity with subtle structural segmentation."
   },
   {
     "objectID": "timbre.html#what-this-means",
     "href": "timbre.html#what-this-means",
     "title": "Timbre Features",
-    "section": "",
-    "text": "Changes in timbre are gradual rather than abrupt. Structural transitions are driven more by layering and density than by strong timbral contrast."
+    "section": "What this means",
+    "text": "What this means\nChanges in timbre are gradual rather than abrupt. Structural transitions are driven more by layering and density than by strong timbral contrast."
   },
   {
     "objectID": "timbre.html#connection-to-the-research-question",
     "href": "timbre.html#connection-to-the-research-question",
     "title": "Timbre Features",
-    "section": "",
-    "text": "This suggests that timbre is not the primary driver of variation within the playlist."
+    "section": "Connection to the research question",
+    "text": "Connection to the research question\nThis suggests that timbre is not the primary driver of variation within the playlist."
   },
   {
     "objectID": "timbre.html#key-insight",
     "href": "timbre.html#key-insight",
     "title": "Timbre Features",
-    "section": "",
-    "text": "Structure is shaped more by harmonic repetition than timbral contrast."
+    "section": "Key Insight",
+    "text": "Key Insight\nStructure is shaped more by harmonic repetition than timbral contrast."
   }
 ]

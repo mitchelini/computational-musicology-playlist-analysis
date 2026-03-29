@@ -46,35 +46,77 @@
     "href": "temporal.html",
     "title": "Temporal Features",
     "section": "",
-    "text": "Tempo Histogram"
+    "text": "Tempo Distribution vs Baseline"
   },
   {
     "objectID": "temporal.html#interpretation",
     "href": "temporal.html#interpretation",
     "title": "Temporal Features",
     "section": "Interpretation",
-    "text": "Interpretation\nTempo values cluster within a relatively narrow BPM range."
+    "text": "Interpretation\nTempo values in the corpus cluster within a narrower range compared to a broad baseline distribution. While the baseline spans a wide BPM spectrum, the playlist shows a clear concentration around a more limited tempo band."
   },
   {
     "objectID": "temporal.html#what-this-means",
     "href": "temporal.html#what-this-means",
     "title": "Temporal Features",
     "section": "What this means",
-    "text": "What this means\nDespite genre diversity, the playlist maintains a consistent rhythmic pacing."
+    "text": "What this means\nThis suggests that the playlist does not reflect random stylistic variation. Instead, it exhibits a constrained tempo profile, indicating a shared rhythmic preference across tracks."
   },
   {
     "objectID": "temporal.html#connection-to-the-research-question",
     "href": "temporal.html#connection-to-the-research-question",
     "title": "Temporal Features",
     "section": "Connection to the research question",
-    "text": "Connection to the research question\nThis reinforces the idea that rhythmic structure is a unifying factor across the corpus."
+    "text": "Connection to the research question\nThe comparison with a baseline distribution strengthens the argument that rhythmic consistency is not incidental, but a defining characteristic of the corpus.\n\n\n\nTempo vs Danceability"
   },
   {
-    "objectID": "temporal.html#key-insight",
-    "href": "temporal.html#key-insight",
+    "objectID": "temporal.html#interpretation-1",
+    "href": "temporal.html#interpretation-1",
     "title": "Temporal Features",
-    "section": "Key Insight",
-    "text": "Key Insight\nThe playlist shows rhythmic consistency across stylistically diverse tracks."
+    "section": "Interpretation",
+    "text": "Interpretation\nThere is no strong relationship between tempo and danceability. Danceability values remain relatively stable across a wide range of tempos."
+  },
+  {
+    "objectID": "temporal.html#what-this-means-1",
+    "href": "temporal.html#what-this-means-1",
+    "title": "Temporal Features",
+    "section": "What this means",
+    "text": "What this means\nThis indicates that rhythmic feel is not solely determined by tempo. Tracks with different BPM values can still achieve a similar level of perceived groove or movement."
+  },
+  {
+    "objectID": "temporal.html#connection-to-the-research-question-1",
+    "href": "temporal.html#connection-to-the-research-question-1",
+    "title": "Temporal Features",
+    "section": "Connection to the research question",
+    "text": "Connection to the research question\nDespite variation in tempo, the consistency in danceability supports the idea that the playlist maintains a stable rhythmic character.\n\n\n\nTrack Duration Distribution"
+  },
+  {
+    "objectID": "temporal.html#interpretation-2",
+    "href": "temporal.html#interpretation-2",
+    "title": "Temporal Features",
+    "section": "Interpretation",
+    "text": "Interpretation\nTrack durations are concentrated within a relatively narrow range, with most tracks falling between approximately 2.5 and 4.5 minutes."
+  },
+  {
+    "objectID": "temporal.html#what-this-means-2",
+    "href": "temporal.html#what-this-means-2",
+    "title": "Temporal Features",
+    "section": "What this means",
+    "text": "What this means\nThis suggests a consistent structural format across the playlist. Similar track lengths imply comparable segmentation, such as intro, verse, chorus, and outro sections."
+  },
+  {
+    "objectID": "temporal.html#connection-to-the-research-question-2",
+    "href": "temporal.html#connection-to-the-research-question-2",
+    "title": "Temporal Features",
+    "section": "Connection to the research question",
+    "text": "Connection to the research question\nThe uniformity in duration reinforces the idea that structural organisation is consistent, even when stylistic elements differ."
+  },
+  {
+    "objectID": "temporal.html#key-findings",
+    "href": "temporal.html#key-findings",
+    "title": "Temporal Features",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe corpus exhibits non-random temporal consistency, where tempo, danceability, and track duration collectively form a stable rhythmic and structural framework. Compared to a broad baseline, tempo values are more concentrated, while danceability remains consistent across tempos and track durations follow a similar structural pattern. Together, these features indicate that temporal organisation acts as a unifying factor within a stylistically diverse playlist."
   },
   {
     "objectID": "index.html",
@@ -249,35 +291,49 @@
     "href": "loudness.html",
     "title": "Loudness & Energy",
     "section": "",
-    "text": "Correlation Matrix"
+    "text": "Spotify’s loudness feature measures the overall intensity of a track in decibels (dB), where values closer to 0 indicate louder tracks. Unlike perceptual features such as energy, loudness reflects the actual acoustic level after mastering.\nThis section examines how loudness behaves across the corpus, and how it relates to other core features such as energy, acousticness, and danceability."
   },
   {
-    "objectID": "loudness.html#interpretation",
-    "href": "loudness.html#interpretation",
+    "objectID": "loudness.html#loudness-distribution",
+    "href": "loudness.html#loudness-distribution",
     "title": "Loudness & Energy",
-    "section": "Interpretation",
-    "text": "Interpretation\nEnergy and loudness are strongly positively correlated (r = 0.75), while energy is negatively correlated with acousticness (r = -0.67)."
+    "section": "Loudness Distribution",
+    "text": "Loudness Distribution\n\n\n\nLoudness Distribution\n\n\nThe distribution shows that most tracks fall within a relatively narrow loudness range, roughly between -10 dB and -5 dB.\n\nInterpretation\nThis concentration suggests that loudness is not used as a highly expressive variable, but rather as a production standard. Tracks are mastered to similar levels, reflecting contemporary streaming and mastering practices where consistency in playback volume is prioritised.\nA small number of quieter tracks (below -12 dB) appear as outliers, indicating occasional deviation from this norm."
   },
   {
-    "objectID": "loudness.html#what-this-means",
-    "href": "loudness.html#what-this-means",
+    "objectID": "loudness.html#loudness-vs-energy",
+    "href": "loudness.html#loudness-vs-energy",
     "title": "Loudness & Energy",
-    "section": "What this means",
-    "text": "What this means\nTracks in the playlist are structured around production intensity. High-energy tracks tend to be louder and less acoustic, reflecting modern production styles."
+    "section": "Loudness vs Energy",
+    "text": "Loudness vs Energy\n\n\n\nLoudness vs Energy\n\n\nThere is a clear positive relationship between loudness and energy: louder tracks tend to have higher energy values.\n\nInterpretation\nAlthough energy is a perceptual measure and loudness is a physical one, they align strongly in this corpus. This suggests that perceived intensity is closely tied to mastering choices, with louder tracks generally being more compressed and dynamically dense."
+  },
+  {
+    "objectID": "loudness.html#loudness-vs-acousticness",
+    "href": "loudness.html#loudness-vs-acousticness",
+    "title": "Loudness & Energy",
+    "section": "Loudness vs Acousticness",
+    "text": "Loudness vs Acousticness\n\n\n\nLoudness vs Acousticness\n\n\nA strong negative relationship is visible between loudness and acousticness. Tracks with high acousticness tend to be significantly quieter.\n\nInterpretation\nThis reflects a clear divide between acoustic and produced sound. Acoustic tracks typically retain more dynamic range and are therefore quieter, while highly produced tracks are compressed and pushed to higher loudness levels."
+  },
+  {
+    "objectID": "loudness.html#loudness-vs-danceability",
+    "href": "loudness.html#loudness-vs-danceability",
+    "title": "Loudness & Energy",
+    "section": "Loudness vs Danceability",
+    "text": "Loudness vs Danceability\n\n\n\nLoudness vs Danceability\n\n\nThe relationship between loudness and danceability is weaker, but still shows a slight positive trend.\n\nInterpretation\nDanceability is not directly driven by loudness, but louder tracks often coincide with more rhythmically stable and production-heavy structures, which can enhance perceived groove and movement."
+  },
+  {
+    "objectID": "loudness.html#key-findings",
+    "href": "loudness.html#key-findings",
+    "title": "Loudness & Energy",
+    "section": "Key Findings",
+    "text": "Key Findings\nAcross all visualisations, loudness behaves as a controlled production parameter rather than a highly variable musical feature:\n\nLoudness is tightly distributed, indicating consistent mastering practices\n\nLouder tracks are generally more energetic\n\nAcoustic tracks are systematically quieter\n\nLoudness has a limited but positive relationship with danceability"
   },
   {
     "objectID": "loudness.html#connection-to-the-research-question",
     "href": "loudness.html#connection-to-the-research-question",
     "title": "Loudness & Energy",
-    "section": "Connection to the research question",
-    "text": "Connection to the research question\nThis suggests that the playlist is not only rhythmically consistent, but also consistent in its production characteristics."
-  },
-  {
-    "objectID": "loudness.html#key-insight",
-    "href": "loudness.html#key-insight",
-    "title": "Loudness & Energy",
-    "section": "Key Insight",
-    "text": "Key Insight\nThe playlist favours high-energy, compressed production over acoustic variation."
+    "section": "Connection to the Research Question",
+    "text": "Connection to the Research Question\nWhile the playlist spans multiple genres and styles, loudness patterns reveal a shared production logic.\nRather than reflecting stylistic diversity, loudness remains relatively consistent across tracks. This supports the idea that the playlist exhibits underlying structural consistency in its sonic characteristics, even when surface-level features appear diverse."
   },
   {
     "objectID": "timbre.html",
@@ -291,27 +347,27 @@
     "href": "timbre.html#interpretation",
     "title": "Timbre Features",
     "section": "Interpretation",
-    "text": "Interpretation\nThe self-similarity matrix shows strong temporal continuity with subtle structural segmentation."
+    "text": "Interpretation\nThe self-similarity matrix shows a largely continuous structure with only subtle block-like patterns. While the diagonal line confirms temporal progression, there are faint off-diagonal similarities indicating repeated sections, but without sharply defined boundaries."
   },
   {
     "objectID": "timbre.html#what-this-means",
     "href": "timbre.html#what-this-means",
     "title": "Timbre Features",
     "section": "What this means",
-    "text": "What this means\nChanges in timbre are gradual rather than abrupt. Structural transitions are driven more by layering and density than by strong timbral contrast."
+    "text": "What this means\nTimbral variation in the track is relatively smooth and gradual. Instead of strong contrasts between sections, changes occur through shifts in texture, layering, and production density. This results in sections that are related rather than clearly separated, giving the track a cohesive sonic identity."
   },
   {
     "objectID": "timbre.html#connection-to-the-research-question",
     "href": "timbre.html#connection-to-the-research-question",
     "title": "Timbre Features",
     "section": "Connection to the research question",
-    "text": "Connection to the research question\nThis suggests that timbre is not the primary driver of variation within the playlist."
+    "text": "Connection to the research question\nDespite stylistic diversity within the playlist, this suggests that timbral structure follows a consistent pattern of gradual evolution rather than abrupt change. Structural variation is therefore not primarily driven by timbre."
   },
   {
     "objectID": "timbre.html#key-insight",
     "href": "timbre.html#key-insight",
     "title": "Timbre Features",
     "section": "Key Insight",
-    "text": "Key Insight\nStructure is shaped more by harmonic repetition than timbral contrast."
+    "text": "Key Insight\nThe track exhibits timbral continuity with limited contrast, reinforcing the idea that structure is shaped more by repetition and layering than by distinct changes in sound texture."
   }
 ]

@@ -159,27 +159,82 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Spotify’s <em>loudness</em> feature measures the overall intensity of a track in decibels (dB), where values closer to 0 indicate louder tracks. Unlike perceptual features such as energy, loudness reflects the <strong>actual acoustic level</strong> after mastering.</p>
+<p>This section examines how loudness behaves across the corpus, and how it relates to other core features such as energy, acousticness, and danceability.</p>
+<section id="loudness-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="loudness-distribution">Loudness Distribution</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="correlation_matrix.png" class="img-fluid figure-img"></p>
-<figcaption>Correlation Matrix</figcaption>
+<p><img src="loudness_distribution.png" class="img-fluid figure-img"></p>
+<figcaption>Loudness Distribution</figcaption>
 </figure>
 </div>
-<section id="interpretation" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
-<p>Energy and loudness are strongly positively correlated (r = 0.75), while energy is negatively correlated with acousticness (r = -0.67).</p>
+<p>The distribution shows that most tracks fall within a relatively narrow loudness range, roughly between -10 dB and -5 dB.</p>
+<section id="interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
+<p>This concentration suggests that loudness is not used as a highly expressive variable, but rather as a <strong>production standard</strong>. Tracks are mastered to similar levels, reflecting contemporary streaming and mastering practices where consistency in playback volume is prioritised.</p>
+<p>A small number of quieter tracks (below -12 dB) appear as outliers, indicating occasional deviation from this norm.</p>
 </section>
-<section id="what-this-means" class="level2">
-<h2 class="anchored" data-anchor-id="what-this-means">What this means</h2>
-<p>Tracks in the playlist are structured around production intensity. High-energy tracks tend to be louder and less acoustic, reflecting modern production styles.</p>
+</section>
+<section id="loudness-vs-energy" class="level2">
+<h2 class="anchored" data-anchor-id="loudness-vs-energy">Loudness vs Energy</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="loudness_vs_energy.png" class="img-fluid figure-img"></p>
+<figcaption>Loudness vs Energy</figcaption>
+</figure>
+</div>
+<p>There is a clear positive relationship between loudness and energy: louder tracks tend to have higher energy values.</p>
+<section id="interpretation-1" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation-1">Interpretation</h3>
+<p>Although energy is a perceptual measure and loudness is a physical one, they align strongly in this corpus. This suggests that <strong>perceived intensity is closely tied to mastering choices</strong>, with louder tracks generally being more compressed and dynamically dense.</p>
+</section>
+</section>
+<section id="loudness-vs-acousticness" class="level2">
+<h2 class="anchored" data-anchor-id="loudness-vs-acousticness">Loudness vs Acousticness</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="loudness_vs_acousticness.png" class="img-fluid figure-img"></p>
+<figcaption>Loudness vs Acousticness</figcaption>
+</figure>
+</div>
+<p>A strong negative relationship is visible between loudness and acousticness. Tracks with high acousticness tend to be significantly quieter.</p>
+<section id="interpretation-2" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation-2">Interpretation</h3>
+<p>This reflects a clear divide between <strong>acoustic and produced sound</strong>. Acoustic tracks typically retain more dynamic range and are therefore quieter, while highly produced tracks are compressed and pushed to higher loudness levels.</p>
+</section>
+</section>
+<section id="loudness-vs-danceability" class="level2">
+<h2 class="anchored" data-anchor-id="loudness-vs-danceability">Loudness vs Danceability</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="loudness_vs_danceability.png" class="img-fluid figure-img"></p>
+<figcaption>Loudness vs Danceability</figcaption>
+</figure>
+</div>
+<p>The relationship between loudness and danceability is weaker, but still shows a slight positive trend.</p>
+<section id="interpretation-3" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation-3">Interpretation</h3>
+<p>Danceability is not directly driven by loudness, but louder tracks often coincide with more <strong>rhythmically stable and production-heavy structures</strong>, which can enhance perceived groove and movement.</p>
+</section>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>Across all visualisations, loudness behaves as a <strong>controlled production parameter</strong> rather than a highly variable musical feature:</p>
+<ul>
+<li>Loudness is <strong>tightly distributed</strong>, indicating consistent mastering practices<br>
+</li>
+<li>Louder tracks are generally <strong>more energetic</strong><br>
+</li>
+<li>Acoustic tracks are <strong>systematically quieter</strong><br>
+</li>
+<li>Loudness has a <strong>limited but positive relationship with danceability</strong></li>
+</ul>
 </section>
 <section id="connection-to-the-research-question" class="level2">
-<h2 class="anchored" data-anchor-id="connection-to-the-research-question">Connection to the research question</h2>
-<p>This suggests that the playlist is not only rhythmically consistent, but also consistent in its production characteristics.</p>
-</section>
-<section id="key-insight" class="level2">
-<h2 class="anchored" data-anchor-id="key-insight">Key Insight</h2>
-<p>The playlist favours <strong>high-energy, compressed production over acoustic variation</strong>.</p>
+<h2 class="anchored" data-anchor-id="connection-to-the-research-question">Connection to the Research Question</h2>
+<p>While the playlist spans multiple genres and styles, loudness patterns reveal a shared production logic.</p>
+<p>Rather than reflecting stylistic diversity, loudness remains relatively consistent across tracks. This supports the idea that the playlist exhibits <strong>underlying structural consistency in its sonic characteristics</strong>, even when surface-level features appear diverse.</p>
 
 
 </section>

@@ -5,7 +5,28 @@ project:
 website:
   title: "Computational Musicology – Playlist Analysis"
 
+  navbar:
+    left:
+      - text: "Corpus"
+        file: index.qmd
+      - text: "Track Features"
+        file: track.qmd
+      - text: "Chroma"
+        file: chroma.qmd
+      - text: "Loudness"
+        file: loudness.qmd
+      - text: "Timbre"
+        file: timbre.qmd
+      - text: "Temporal"
+        file: temporal.qmd
+      - text: "Clustering"
+        file: clustering.qmd
+      - text: "Contribution"
+        file: contribution.qmd
+
 format:
   html:
-    theme: cosmo
-    toc: true
+    theme: darkly
+    css: styles.css
+    toc: false
+    smooth-scroll: true

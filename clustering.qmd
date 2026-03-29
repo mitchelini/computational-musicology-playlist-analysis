@@ -2,8 +2,6 @@
 title: "Clustering"
 ---
 
-# Clustering
-
 ![Clustering](week12_hierarchical_clustering_dendrogram.png)
 
 ## Interpretation

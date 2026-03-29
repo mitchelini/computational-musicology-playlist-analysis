@@ -2,20 +2,63 @@
 title: "Loudness & Energy"
 ---
 
-![Correlation Matrix](correlation_matrix.png)
+Spotify’s *loudness* feature measures the overall intensity of a track in decibels (dB), where values closer to 0 indicate louder tracks. Unlike perceptual features such as energy, loudness reflects the **actual acoustic level** after mastering.
 
-## Interpretation
+This section examines how loudness behaves across the corpus, and how it relates to other core features such as energy, acousticness, and danceability.
 
-Energy and loudness are strongly positively correlated (r = 0.75), while energy is negatively correlated with acousticness (r = -0.67).
+## Loudness Distribution
 
-## What this means
+![Loudness Distribution](loudness_distribution.png)
 
-Tracks in the playlist are structured around production intensity. High-energy tracks tend to be louder and less acoustic, reflecting modern production styles.
+The distribution shows that most tracks fall within a relatively narrow loudness range, roughly between -10 dB and -5 dB.
 
-## Connection to the research question
+### Interpretation
 
-This suggests that the playlist is not only rhythmically consistent, but also consistent in its production characteristics.
+This concentration suggests that loudness is not used as a highly expressive variable, but rather as a **production standard**. Tracks are mastered to similar levels, reflecting contemporary streaming and mastering practices where consistency in playback volume is prioritised.
 
-## Key Insight
+A small number of quieter tracks (below -12 dB) appear as outliers, indicating occasional deviation from this norm.
 
-The playlist favours **high-energy, compressed production over acoustic variation**.
+## Loudness vs Energy
+
+![Loudness vs Energy](loudness_vs_energy.png)
+
+There is a clear positive relationship between loudness and energy: louder tracks tend to have higher energy values.
+
+### Interpretation
+
+Although energy is a perceptual measure and loudness is a physical one, they align strongly in this corpus. This suggests that **perceived intensity is closely tied to mastering choices**, with louder tracks generally being more compressed and dynamically dense.
+
+## Loudness vs Acousticness
+
+![Loudness vs Acousticness](loudness_vs_acousticness.png)
+
+A strong negative relationship is visible between loudness and acousticness. Tracks with high acousticness tend to be significantly quieter.
+
+### Interpretation
+
+This reflects a clear divide between **acoustic and produced sound**. Acoustic tracks typically retain more dynamic range and are therefore quieter, while highly produced tracks are compressed and pushed to higher loudness levels.
+
+## Loudness vs Danceability
+
+![Loudness vs Danceability](loudness_vs_danceability.png)
+
+The relationship between loudness and danceability is weaker, but still shows a slight positive trend.
+
+### Interpretation
+
+Danceability is not directly driven by loudness, but louder tracks often coincide with more **rhythmically stable and production-heavy structures**, which can enhance perceived groove and movement.
+
+## Key Findings
+
+Across all visualisations, loudness behaves as a **controlled production parameter** rather than a highly variable musical feature:
+
+- Loudness is **tightly distributed**, indicating consistent mastering practices  
+- Louder tracks are generally **more energetic**  
+- Acoustic tracks are **systematically quieter**  
+- Loudness has a **limited but positive relationship with danceability**
+
+## Connection to the Research Question
+
+While the playlist spans multiple genres and styles, loudness patterns reveal a shared production logic.
+
+Rather than reflecting stylistic diversity, loudness remains relatively consistent across tracks. This supports the idea that the playlist exhibits **underlying structural consistency in its sonic characteristics**, even when surface-level features appear diverse.

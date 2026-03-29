@@ -1,1 +1,23 @@
+---
+title: "Timbre Features"
+---
 
+# Timbre Features
+
+![Timbre SSM – Wanderlust](timbre_ssm_wanderlust.png)
+
+## Interpretation
+
+The self-similarity matrix shows strong temporal continuity with subtle structural segmentation.
+
+## What this means
+
+Changes in timbre are gradual rather than abrupt. Structural transitions are driven more by layering and density than by strong timbral contrast.
+
+## Connection to the research question
+
+This suggests that timbre is not the primary driver of variation within the playlist.
+
+## Key Insight
+
+Structure is shaped more by **harmonic repetition than timbral contrast**.

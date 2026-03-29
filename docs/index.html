@@ -159,9 +159,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>library(tidyverse) library(DT) library(janitor)</p>
-<p>df &lt;- read_csv(“Computational_Musicology.csv”) %&gt;% clean_names()</p>
-<p>corpus_explorer &lt;- df %&gt;% select( track_name, artist_name_s, genres, popularity, duration_ms, danceability, energy, loudness, speechiness, acousticness, liveness, valence, tempo, instrumentalness ) %&gt;% mutate(duration = round(duration_ms / 60000, 2)) %&gt;% select(-duration_ms) %&gt;% rename( <code>track name</code> = track_name, <code>artist name(s)</code> = artist_name_s )```</p>
 <section id="research-question" class="level2">
 <h2 class="anchored" data-anchor-id="research-question">Research Question</h2>
 <p><em>Do my favorite songs share underlying patterns in Spotify audio features despite differences in genre, language, and artist?</em></p>
@@ -226,7 +223,8 @@ This analysis focuses on identifying patterns that may explain why these songs a
 <section id="full-corpus-explorer" class="level2">
 <h2 class="anchored" data-anchor-id="full-corpus-explorer">Full Corpus Explorer</h2>
 <p>This section provides an interactive overview of the dataset, allowing exploration of tracks and their audio features.</p>
-<p>datatable( corpus_explorer, options = list( pageLength = 20, scrollX = TRUE, autoWidth = TRUE ), rownames = FALSE )```</p>
+<iframe src="corpus-explorer.html" width="100%" height="900" style="border:none; border-radius:12px; overflow:hidden;">
+</iframe>
 
 
 </section>

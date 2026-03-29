@@ -1,8 +1,6 @@
 ---
-title: "Loudness"
+title: "Loudness & Energy"
 ---
-
-# Loudness & Energy
 
 ![Correlation Matrix](correlation_matrix.png)
 

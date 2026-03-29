@@ -3,8 +3,46 @@ title: "Computational Musicology – Playlist Analysis"
 format:
   html:
     theme: darkly
-    toc: false
-    page-layout: article
+    toc: true
+    toc-location: left
+    toc-depth: 2
+    number-sections: false
+    smooth-scroll: true
+    page-layout: full
+    css: styles.css
+---
+
+# 🎧 My Corpus
+
+## Playlist
+
+<iframe style="border-radius:12px" 
+src="https://open.spotify.com/embed/playlist/7EYqSyCa48m0MQiTRQZgB6" 
+width="100%" height="380" frameBorder="0" 
+allowfullscreen="" 
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+
+## Description
+
+This corpus consists of 100+ tracks drawn from my personal Spotify listening history, spanning Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.
+
+Rather than being curated by genre, the playlist reflects long-term listening behaviour, making it suitable for analysing whether perceived diversity aligns with measurable structural consistency.
+
+---
+
+# Background
+
+## Research Question
+
+To what extent does a stylistically diverse personal playlist exhibit underlying structural consistency in Spotify-derived audio features?
+
+## Assumptions
+
+- Spotify audio features approximate perceptual qualities (energy, valence, etc.)
+- Personal taste can be quantified through repeated listening patterns
+- Genre labels are less informative than audio features
+
 ---
 
 ## Introduction

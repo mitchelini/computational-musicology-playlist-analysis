@@ -1,1 +1,28 @@
+---
+title: "Contribution"
+---
 
+# Contribution
+
+## What did we learn?
+
+Although the playlist appears stylistically diverse, multiple analyses reveal consistent patterns across tracks.
+
+These include:
+- stable energy levels  
+- consistent tempo ranges  
+- harmonic repetition  
+- similar production characteristics  
+
+## Why does this matter?
+
+This suggests that personal music taste is not primarily genre-based, but driven by deeper structural features such as rhythm, energy, and production style.
+
+## Implications
+
+- Music recommendation systems could benefit from focusing on feature similarity rather than genre labels  
+- Personal playlists may contain hidden structure despite apparent diversity  
+
+## Final Insight
+
+This playlist is not a collection of different genres — it is a **coherent system shaped by consistent musical preferences**.

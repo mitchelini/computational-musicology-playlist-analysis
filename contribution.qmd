@@ -2,8 +2,6 @@
 title: "Contribution"
 ---
 
-# Contribution
-
 ## What did we learn?
 
 Although the playlist appears stylistically diverse, multiple analyses reveal consistent patterns across tracks.

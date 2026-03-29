@@ -284,35 +284,42 @@
     "href": "contribution.html",
     "title": "Contribution",
     "section": "",
-    "text": "Although the playlist appears stylistically diverse, multiple analyses reveal consistent patterns across tracks.\nThese include: - stable energy levels\n- consistent tempo ranges\n- harmonic repetition\n- similar production characteristics"
+    "text": "This project examined whether a seemingly diverse personal playlist contains underlying structural consistency when analysed through Spotify-derived audio features.\nAcross all analytical sections, a consistent pattern emerges. Despite variation in genre, language, and artist, the playlist is characterised by a constrained set of musical properties. Danceability and energy are tightly distributed, tempo remains within a limited range, harmonic structure is based on repetition, and loudness reflects consistent production standards.\nRather than representing true diversity, the playlist shows variation within a stable musical framework."
   },
   {
-    "objectID": "contribution.html#what-did-we-learn",
-    "href": "contribution.html#what-did-we-learn",
+    "objectID": "contribution.html#overview",
+    "href": "contribution.html#overview",
     "title": "Contribution",
     "section": "",
-    "text": "Although the playlist appears stylistically diverse, multiple analyses reveal consistent patterns across tracks.\nThese include: - stable energy levels\n- consistent tempo ranges\n- harmonic repetition\n- similar production characteristics"
+    "text": "This project examined whether a seemingly diverse personal playlist contains underlying structural consistency when analysed through Spotify-derived audio features.\nAcross all analytical sections, a consistent pattern emerges. Despite variation in genre, language, and artist, the playlist is characterised by a constrained set of musical properties. Danceability and energy are tightly distributed, tempo remains within a limited range, harmonic structure is based on repetition, and loudness reflects consistent production standards.\nRather than representing true diversity, the playlist shows variation within a stable musical framework."
   },
   {
-    "objectID": "contribution.html#why-does-this-matter",
-    "href": "contribution.html#why-does-this-matter",
+    "objectID": "contribution.html#what-we-learned",
+    "href": "contribution.html#what-we-learned",
     "title": "Contribution",
-    "section": "Why does this matter?",
-    "text": "Why does this matter?\nThis suggests that personal music taste is not primarily genre-based, but driven by deeper structural features such as rhythm, energy, and production style."
+    "section": "What we learned",
+    "text": "What we learned\nA central finding is that personal music preference is not primarily organised around genre.\nAcross track-level features, chroma analysis, and temporal structure, the same patterns reappear: stable rhythm, consistent production intensity, and limited harmonic variation. Even when tracks differ stylistically, they occupy similar positions in feature space.\nThe clustering analysis makes this particularly clear. Tracks do not group according to artist or genre, but according to combinations of features such as energy, acousticness, and instrumental presence. The clusters are not sharply separated, but form a continuous structure, indicating gradual variation rather than distinct categories."
   },
   {
-    "objectID": "contribution.html#implications",
-    "href": "contribution.html#implications",
+    "objectID": "contribution.html#what-this-reveals",
+    "href": "contribution.html#what-this-reveals",
     "title": "Contribution",
-    "section": "Implications",
-    "text": "Implications\n\nMusic recommendation systems could benefit from focusing on feature similarity rather than genre labels\n\nPersonal playlists may contain hidden structure despite apparent diversity"
+    "section": "What this reveals",
+    "text": "What this reveals\nThis project highlights a clear distinction between perceived diversity and structural similarity.\nFrom a listening perspective, the playlist feels varied. However, the analyses show that many tracks share comparable feature profiles. Differences exist, but they occur within a constrained range of musical characteristics.\nThis is visible across multiple dimensions: - temporal features show consistent tempo and structure\n- chroma features reveal repetition and stable tonal centres\n- timbre evolves gradually rather than through sharp contrast\n- clustering shows overlap rather than clear separation\nTogether, these results demonstrate that computational analysis can reveal patterns that are difficult to detect through listening alone."
+  },
+  {
+    "objectID": "contribution.html#who-benefits-from-this",
+    "href": "contribution.html#who-benefits-from-this",
+    "title": "Contribution",
+    "section": "Who benefits from this",
+    "text": "Who benefits from this\nThese findings have implications beyond this specific playlist.\nFor music recommendation systems, they highlight the limitations of genre-based classification. Systems that rely more heavily on feature similarity are likely to better reflect how listeners actually experience and organise music.\nFor listeners, the results provide a clearer understanding of personal taste. What feels like diversity may in fact reflect a consistent set of underlying preferences operating across different styles and artists."
   },
   {
     "objectID": "contribution.html#final-insight",
     "href": "contribution.html#final-insight",
     "title": "Contribution",
-    "section": "Final Insight",
-    "text": "Final Insight\nThis playlist is not a collection of different genres — it is a coherent system shaped by consistent musical preferences."
+    "section": "Final insight",
+    "text": "Final insight\nSubjective listening behaviour and objective audio features do align, but not always in obvious ways.\nThis project shows that personal music preference has a measurable structure, shaped by rhythm, production intensity, and sonic texture rather than by genre labels alone.\nRather than a random collection of tracks, this playlist can be understood as a coherent system defined by consistent musical preferences."
   },
   {
     "objectID": "loudness.html",

@@ -7,7 +7,7 @@ website:
 
   navbar:
     left:
-      - text: "Corpus"
+      - text: "Corpus & Background"
         file: index.qmd
       - text: "Track Features"
         file: track.qmd

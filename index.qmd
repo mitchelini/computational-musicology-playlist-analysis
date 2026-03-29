@@ -1,42 +1,128 @@
 ---
-title: "Corpus & Background"
+title: "Background & Corpus"
 ---
 
-# 🎧 My Corpus
+```{r}
+library(tidyverse)
+library(DT)
+library(janitor)
 
-## Playlist
+df <- read_csv("Computational_Musicology.csv") %>%
+  clean_names()
+
+corpus_explorer <- df %>%
+  select(
+    track_name,
+    artist_name_s,
+    genres,
+    popularity,
+    duration_ms,
+    danceability,
+    energy,
+    loudness,
+    speechiness,
+    acousticness,
+    liveness,
+    valence,
+    tempo,
+    instrumentalness
+  ) %>%
+  mutate(duration = round(duration_ms / 60000, 2)) %>%
+  select(-duration_ms) %>%
+  rename(
+    `track name` = track_name,
+    `artist name(s)` = artist_name_s
+  )
+```
+
+## Research Question
+
+*Do my favorite songs share underlying patterns in Spotify audio features despite differences in genre, language, and artist?*
+
+This project explores whether personal music preferences can be explained through measurable audio characteristics, using a playlist of my 100+ favorite tracks.
+
+---
+
+## The Playlist
+
+::: {.ss-block}
 
 <iframe style="border-radius:12px" 
 src="https://open.spotify.com/embed/playlist/7EYqSyCa48m0MQiTRQZgB6" 
 width="100%" height="380">
 </iframe>
 
-## Description
+:::
 
-This corpus consists of 100+ tracks drawn from my personal Spotify listening history, spanning Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.
-
-Rather than being curated by genre, the playlist reflects long-term listening behaviour. This makes it suitable for analysing whether perceived stylistic diversity corresponds to measurable structural consistency.
-
----
-
-# Background
-
-## Introduction
-
-This project analyzes a personal Spotify playlist consisting of over 100 tracks across multiple languages and genres, including rap, trap, R&B, and pop. Artists range from The Weeknd and Michael Jackson to Frenna, Coldplay, and 2Pac.
-
-Although the playlist appears stylistically diverse, this analysis investigates whether underlying musical features reveal a more consistent structure.
+The corpus is based on a personal Spotify playlist consisting of over 100 tracks.  
+Rather than being curated by genre or artist, the playlist reflects individual listening preferences — songs that stand out as favorites over time.
 
 ---
 
-## Research Question
+## The Corpus
 
-To what extent does a stylistically diverse personal playlist exhibit underlying structural consistency in Spotify-derived audio features?
+The dataset spans Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.
+
+Despite this apparent diversity in genre, language, and artist, the key question is whether these tracks share common underlying characteristics.  
+This analysis focuses on identifying patterns that may explain why these songs are consistently preferred.
+
+---
+
+## Top Artists & Genres
+
+The playlist contains a wide range of artists and genres, but some occur more frequently than others.
+
+The top 5 most frequent artists are:
+- The Weeknd (12 tracks)  
+- Tory Lanez (6 tracks)  
+- Frenna (4 tracks)  
+- Sevn Alias (4 tracks)  
+- Brent Faiyaz (3 tracks)  
+
+In terms of genre, the top 3 occurring genres are:
+- Rap  
+- R&B  
+- Drill  
+
+At the same time, the playlist remains diverse, with many other artists and genres appearing less frequently.
+
+The dataset includes songs in three main languages:
+- English  
+- Dutch  
+- Spanish  
+
+---
+
+## Approach
+
+This project applies computational analysis to uncover patterns within the playlist.
+
+Key steps include:
+- Extracting Spotify audio features (e.g. energy, danceability, tempo, valence)  
+- Analyzing distributions of these features across all tracks  
+- Identifying recurring patterns and potential clusters  
+- Comparing perceived diversity with measurable similarity  
+
+The goal is to determine whether subjective music preferences align with objective, data-driven characteristics.
 
 ---
 
 ## Assumptions
 
-- Spotify audio features approximate perceptual musical qualities such as energy, mood, and rhythm  
-- Personal listening behaviour reflects consistent preferences that can be quantified  
-- Genre labels are less informative than feature-based representations  
+- Spotify audio features approximate perceptual musical qualities  
+- Personal listening preferences reflect underlying patterns that can be quantified  
+- Feature-based analysis provides deeper insight than genre labels alone  
+
+---
+
+## Full Corpus Explorer
+
+datatable(
+  corpus_explorer,
+  options = list(
+    pageLength = 20,
+    scrollX = TRUE,
+    autoWidth = TRUE
+  ),
+  rownames = FALSE
+)

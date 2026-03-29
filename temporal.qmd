@@ -4,46 +4,46 @@ title: "Temporal Features"
 
 ![Tempo Distribution vs Baseline](tempo_vs_baseline.png)
 
+## Tempo Distribution vs Baseline
+
+The distribution shows that tempo values in the corpus cluster within a narrower range compared to a broad baseline distribution. While the baseline spans a wide BPM spectrum, the playlist is clearly concentrated around a more limited tempo band.
+
 ## Interpretation
 
-Tempo values in the corpus cluster within a narrower range compared to a broad baseline distribution. While the baseline spans a wide BPM spectrum, the playlist shows a clear concentration around a more limited tempo band.
-
-## What this means
-
-This suggests that the playlist does not reflect random stylistic variation. Instead, it exhibits a constrained tempo profile, indicating a shared rhythmic preference across tracks.
-
-## Connection to the research question
-
-The comparison with a baseline distribution strengthens the argument that rhythmic consistency is not incidental, but a defining characteristic of the corpus.
+This suggests that tempo is not randomly distributed across the playlist, but reflects a consistent rhythmic preference. Rather than covering the full range of possible tempos, the corpus is constrained to a specific region commonly associated with popular music.
 
 ![Tempo vs Danceability](tempo_danceability.png)
 
-## Interpretation
+## Tempo vs Danceability
 
 There is no strong relationship between tempo and danceability. Danceability values remain relatively stable across a wide range of tempos.
 
-## What this means
+## Interpretation
 
-This indicates that rhythmic feel is not solely determined by tempo. Tracks with different BPM values can still achieve a similar level of perceived groove or movement.
-
-## Connection to the research question
-
-Despite variation in tempo, the consistency in danceability supports the idea that the playlist maintains a stable rhythmic character.
+This indicates that rhythmic feel is not solely determined by tempo. Tracks with different BPM values can still achieve a similar level of perceived groove or movement. This suggests that other musical factors, such as rhythmic patterns or production style, contribute to danceability.
 
 ![Track Duration Distribution](duration_distribution.png)
 
-## Interpretation
+## Track Duration Distribution
 
 Track durations are concentrated within a relatively narrow range, with most tracks falling between approximately 2.5 and 4.5 minutes.
 
-## What this means
+## Interpretation
 
-This suggests a consistent structural format across the playlist. Similar track lengths imply comparable segmentation, such as intro, verse, chorus, and outro sections.
-
-## Connection to the research question
-
-The uniformity in duration reinforces the idea that structural organisation is consistent, even when stylistic elements differ.
+This suggests a consistent structural format across the playlist. Similar track lengths imply comparable segmentation, such as intro, verse, chorus, and outro sections, which are typical of contemporary popular music.
 
 ## Key Findings
 
-The corpus exhibits **non-random temporal consistency**, where tempo, danceability, and track duration collectively form a stable rhythmic and structural framework. Compared to a broad baseline, tempo values are more concentrated, while danceability remains consistent across tempos and track durations follow a similar structural pattern. Together, these features indicate that temporal organisation acts as a unifying factor within a stylistically diverse playlist.
+Across all visualisations, temporal features show a clear pattern of consistency:
+
+- Tempo values are more concentrated than in a broad baseline distribution
+- Danceability remains stable across different tempos
+- Track durations follow a similar structural range
+
+Together, these results indicate that temporal organisation is not random, but follows a consistent rhythmic and structural framework across the playlist.
+
+## Connection to the Research Question
+
+Although the playlist spans multiple genres and styles, the temporal analysis reveals a shared underlying structure.
+
+Rather than reflecting diversity in rhythmic organisation, the corpus shows consistency in tempo, groove, and track duration. This supports the idea that a stylistically diverse playlist can still exhibit strong structural coherence in its temporal features.

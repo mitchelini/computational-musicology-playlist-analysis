@@ -8,8 +8,6 @@ title: "Background & Corpus"
 
 This project explores whether personal music preferences can be explained through measurable audio characteristics, using a playlist of my 100+ favorite tracks.
 
----
-
 ## The Playlist
 
 ::: {.ss-block}
@@ -24,16 +22,12 @@ width="100%" height="380">
 The corpus is based on a personal Spotify playlist consisting of over 100 tracks.  
 Rather than being curated by genre or artist, the playlist reflects individual listening preferences — songs that stand out as favorites over time.
 
----
-
 ## The Corpus
 
 The dataset spans Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.
 
 Despite this apparent diversity in genre, language, and artist, the key question is whether these tracks share common underlying characteristics.  
 This analysis focuses on identifying patterns that may explain why these songs are consistently preferred.
-
----
 
 ## Top Artists & Genres
 
@@ -58,8 +52,6 @@ The dataset includes songs in three main languages:
 - Dutch  
 - Spanish  
 
----
-
 ## Approach
 
 This project applies computational analysis to uncover patterns within the playlist.
@@ -72,15 +64,11 @@ Key steps include:
 
 The goal is to determine whether subjective music preferences align with objective, data-driven characteristics.
 
----
-
 ## Assumptions
 
 - Spotify audio features approximate perceptual musical qualities  
 - Personal listening preferences reflect underlying patterns that can be quantified  
 - Feature-based analysis provides deeper insight than genre labels alone  
-
----
 
 ## Full Corpus Explorer
 

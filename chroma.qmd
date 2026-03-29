@@ -2,22 +2,69 @@
 title: "Chroma Features"
 ---
 
-## Highlight Track: The Weeknd – Wanderlust
+Chroma features describe how harmonic energy is distributed across the twelve pitch classes of Western music (C, C#, D, Eb, E, F, F#, G, Ab, A, Bb, B). Unlike raw frequency representations, chroma features are octave-invariant: they capture which notes are active, rather than how high or low they are.
 
-![Chromagram – Wanderlust](chroma_wanderlust.jpeg)
+This makes chroma particularly suitable for analysing **harmonic structure, tonal centres, and repetition** within a track.
 
-## Interpretation
+For this analysis, *The Weeknd – Wanderlust* was selected as a representative track from the corpus.
 
-The chromagram shows recurring activation of specific pitch classes over time, indicating a stable tonal centre and repeated harmonic patterns.
+## Chromagram — Wanderlust
 
-## What this means
+![Chromagram – Wanderlust](chromagram_wanderlust.png)
 
-Rather than exhibiting harmonic complexity or frequent modulation, the track relies on loop-based harmonic structures. These repeating pitch distributions align with a consistent and recognisable musical foundation.
+The chromagram shows the intensity of each pitch class over time. Clear horizontal bands indicate pitch classes that remain active throughout the track, while vertical patterns reflect repetition of harmonic material.
 
-## Connection to the research question
+In *Wanderlust*, several pitch classes are consistently active across the full duration of the track. Rather than a constantly shifting harmonic landscape, the track shows a **stable distribution of pitch-class energy**.
 
-Although the playlist appears stylistically diverse, this suggests that harmonic behaviour may be more consistent than expected across tracks.
+### Interpretation
 
-## Key Insight
+The repeated vertical structures indicate a loop-based harmonic organisation. The same harmonic material returns at regular intervals, which is typical for pop and R&B production.
 
-The playlist shows **harmonic consistency through stable tonal centres and repetition**.
+At the same time, the presence of a limited number of dominant pitch classes suggests a **stable tonal centre**, rather than frequent modulation between keys.
+
+## Chord Activity — Wanderlust
+
+![Chordogram – Wanderlust](chordogram_wanderlust.png)
+
+The chordogram compares the chroma features at each moment to a set of chord templates. Brighter regions indicate a stronger match between the audio signal and a given chord.
+
+The visualisation shows that a small number of chords remain active throughout the track, with relatively little variation over time.
+
+### Interpretation
+
+Rather than moving through a wide harmonic vocabulary, the track cycles through a **limited set of chords**. The lack of sharp transitions between different chord regions suggests that harmonic change is gradual and repetitive, rather than structurally complex.
+
+This supports the idea that the harmonic structure is driven by repetition rather than progression.
+
+## Key Activity — Wanderlust
+
+![Keygram – Wanderlust](keygram_wanderlust.png)
+
+The keygram estimates the likelihood of different tonal centres over time by comparing chroma features to key templates.
+
+The plot shows a clear dominance of a single key region across the track, with only minor variation in intensity.
+
+### Interpretation
+
+The track remains centred around a **stable tonal area**, with little evidence of strong modulation. Although small fluctuations occur, they do not indicate structural key changes, but rather local variations in harmonic emphasis.
+
+This reinforces the observation that the harmonic structure is consistent over time.
+
+## Key Findings
+
+Across all visualisations, *Wanderlust* exhibits a clear pattern of **harmonic stability and repetition**:
+
+- The chromagram shows **consistent activation of a limited set of pitch classes**
+- The chordogram indicates a **small and repeating chord vocabulary**
+- The keygram confirms a **stable tonal centre with minimal modulation**
+
+Together, these results suggest that the track relies on **loop-based harmonic structures rather than harmonic complexity**.
+
+## Connection to the Research Question
+
+Although the playlist appears stylistically diverse, the chroma analysis suggests that this diversity does not necessarily extend to harmonic structure.
+
+Instead, tracks may share underlying similarities in how harmony is organised:  
+through **repetition, limited pitch-class usage, and stable tonal centres**.
+
+This supports the idea that a seemingly diverse playlist can still exhibit **deep structural consistency**.

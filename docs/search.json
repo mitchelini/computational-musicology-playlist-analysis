@@ -49,74 +49,60 @@
     "text": "Tempo Distribution vs Baseline"
   },
   {
+    "objectID": "temporal.html#tempo-distribution-vs-baseline",
+    "href": "temporal.html#tempo-distribution-vs-baseline",
+    "title": "Temporal Features",
+    "section": "Tempo Distribution vs Baseline",
+    "text": "Tempo Distribution vs Baseline\nThe distribution shows that tempo values in the corpus cluster within a narrower range compared to a broad baseline distribution. While the baseline spans a wide BPM spectrum, the playlist is clearly concentrated around a more limited tempo band."
+  },
+  {
     "objectID": "temporal.html#interpretation",
     "href": "temporal.html#interpretation",
     "title": "Temporal Features",
     "section": "Interpretation",
-    "text": "Interpretation\nTempo values in the corpus cluster within a narrower range compared to a broad baseline distribution. While the baseline spans a wide BPM spectrum, the playlist shows a clear concentration around a more limited tempo band."
+    "text": "Interpretation\nThis suggests that tempo is not randomly distributed across the playlist, but reflects a consistent rhythmic preference. Rather than covering the full range of possible tempos, the corpus is constrained to a specific region commonly associated with popular music.\n\n\n\nTempo vs Danceability"
   },
   {
-    "objectID": "temporal.html#what-this-means",
-    "href": "temporal.html#what-this-means",
+    "objectID": "temporal.html#tempo-vs-danceability",
+    "href": "temporal.html#tempo-vs-danceability",
     "title": "Temporal Features",
-    "section": "What this means",
-    "text": "What this means\nThis suggests that the playlist does not reflect random stylistic variation. Instead, it exhibits a constrained tempo profile, indicating a shared rhythmic preference across tracks."
-  },
-  {
-    "objectID": "temporal.html#connection-to-the-research-question",
-    "href": "temporal.html#connection-to-the-research-question",
-    "title": "Temporal Features",
-    "section": "Connection to the research question",
-    "text": "Connection to the research question\nThe comparison with a baseline distribution strengthens the argument that rhythmic consistency is not incidental, but a defining characteristic of the corpus.\n\n\n\nTempo vs Danceability"
+    "section": "Tempo vs Danceability",
+    "text": "Tempo vs Danceability\nThere is no strong relationship between tempo and danceability. Danceability values remain relatively stable across a wide range of tempos."
   },
   {
     "objectID": "temporal.html#interpretation-1",
     "href": "temporal.html#interpretation-1",
     "title": "Temporal Features",
     "section": "Interpretation",
-    "text": "Interpretation\nThere is no strong relationship between tempo and danceability. Danceability values remain relatively stable across a wide range of tempos."
+    "text": "Interpretation\nThis indicates that rhythmic feel is not solely determined by tempo. Tracks with different BPM values can still achieve a similar level of perceived groove or movement. This suggests that other musical factors, such as rhythmic patterns or production style, contribute to danceability.\n\n\n\nTrack Duration Distribution"
   },
   {
-    "objectID": "temporal.html#what-this-means-1",
-    "href": "temporal.html#what-this-means-1",
+    "objectID": "temporal.html#track-duration-distribution",
+    "href": "temporal.html#track-duration-distribution",
     "title": "Temporal Features",
-    "section": "What this means",
-    "text": "What this means\nThis indicates that rhythmic feel is not solely determined by tempo. Tracks with different BPM values can still achieve a similar level of perceived groove or movement."
-  },
-  {
-    "objectID": "temporal.html#connection-to-the-research-question-1",
-    "href": "temporal.html#connection-to-the-research-question-1",
-    "title": "Temporal Features",
-    "section": "Connection to the research question",
-    "text": "Connection to the research question\nDespite variation in tempo, the consistency in danceability supports the idea that the playlist maintains a stable rhythmic character.\n\n\n\nTrack Duration Distribution"
+    "section": "Track Duration Distribution",
+    "text": "Track Duration Distribution\nTrack durations are concentrated within a relatively narrow range, with most tracks falling between approximately 2.5 and 4.5 minutes."
   },
   {
     "objectID": "temporal.html#interpretation-2",
     "href": "temporal.html#interpretation-2",
     "title": "Temporal Features",
     "section": "Interpretation",
-    "text": "Interpretation\nTrack durations are concentrated within a relatively narrow range, with most tracks falling between approximately 2.5 and 4.5 minutes."
-  },
-  {
-    "objectID": "temporal.html#what-this-means-2",
-    "href": "temporal.html#what-this-means-2",
-    "title": "Temporal Features",
-    "section": "What this means",
-    "text": "What this means\nThis suggests a consistent structural format across the playlist. Similar track lengths imply comparable segmentation, such as intro, verse, chorus, and outro sections."
-  },
-  {
-    "objectID": "temporal.html#connection-to-the-research-question-2",
-    "href": "temporal.html#connection-to-the-research-question-2",
-    "title": "Temporal Features",
-    "section": "Connection to the research question",
-    "text": "Connection to the research question\nThe uniformity in duration reinforces the idea that structural organisation is consistent, even when stylistic elements differ."
+    "text": "Interpretation\nThis suggests a consistent structural format across the playlist. Similar track lengths imply comparable segmentation, such as intro, verse, chorus, and outro sections, which are typical of contemporary popular music."
   },
   {
     "objectID": "temporal.html#key-findings",
     "href": "temporal.html#key-findings",
     "title": "Temporal Features",
     "section": "Key Findings",
-    "text": "Key Findings\nThe corpus exhibits non-random temporal consistency, where tempo, danceability, and track duration collectively form a stable rhythmic and structural framework. Compared to a broad baseline, tempo values are more concentrated, while danceability remains consistent across tempos and track durations follow a similar structural pattern. Together, these features indicate that temporal organisation acts as a unifying factor within a stylistically diverse playlist."
+    "text": "Key Findings\nAcross all visualisations, temporal features show a clear pattern of consistency:\n\nTempo values are more concentrated than in a broad baseline distribution\nDanceability remains stable across different tempos\nTrack durations follow a similar structural range\n\nTogether, these results indicate that temporal organisation is not random, but follows a consistent rhythmic and structural framework across the playlist."
+  },
+  {
+    "objectID": "temporal.html#connection-to-the-research-question",
+    "href": "temporal.html#connection-to-the-research-question",
+    "title": "Temporal Features",
+    "section": "Connection to the Research Question",
+    "text": "Connection to the Research Question\nAlthough the playlist spans multiple genres and styles, the temporal analysis reveals a shared underlying structure.\nRather than reflecting diversity in rhythmic organisation, the corpus shows consistency in tempo, groove, and track duration. This supports the idea that a stylistically diverse playlist can still exhibit strong structural coherence in its temporal features."
   },
   {
     "objectID": "index.html",
@@ -179,35 +165,77 @@
     "href": "clustering.html",
     "title": "Clustering",
     "section": "",
-    "text": "Clustering"
+    "text": "This section examines whether the playlist contains meaningful internal structure when no explicit labels such as genre or artist are used.\nClustering allows us to move beyond subjective listening and analyse how tracks group together purely based on their audio features.\nThe analysis combines hierarchical clustering, a feature heatmap, and dimensionality reduction through PCA."
+  },
+  {
+    "objectID": "clustering.html#dendrogram",
+    "href": "clustering.html#dendrogram",
+    "title": "Clustering",
+    "section": "Dendrogram",
+    "text": "Dendrogram\n\n\n\nHierarchical Clustering Dendrogram\n\n\nThe dendrogram shows how tracks group together based on similarity across all selected audio features."
   },
   {
     "objectID": "clustering.html#interpretation",
     "href": "clustering.html#interpretation",
     "title": "Clustering",
     "section": "Interpretation",
-    "text": "Interpretation\nThe dendrogram reveals clear groupings of tracks based on audio features."
+    "text": "Interpretation\nAt higher levels of the tree, a small number of broader clusters emerge. However, the structure is not sharply divided. Many tracks merge gradually, indicating that differences between groups are subtle rather than clearly separated.\nThis suggests that the playlist does not consist of distinct categories, but rather a continuum of musical characteristics."
   },
   {
-    "objectID": "clustering.html#what-this-means",
-    "href": "clustering.html#what-this-means",
+    "objectID": "clustering.html#feature-heatmap",
+    "href": "clustering.html#feature-heatmap",
     "title": "Clustering",
-    "section": "What this means",
-    "text": "What this means\nThe playlist is not random, but structured around clusters of similar musical characteristics.\nDifferent clusters represent variations in energy, danceability, and acousticness."
+    "section": "Feature Heatmap",
+    "text": "Feature Heatmap\n\n\n\nFeature Heatmap (per track)\n\n\nThe heatmap provides a detailed view of how individual tracks behave across features such as energy, loudness, danceability, acousticness, instrumentalness, and tempo."
+  },
+  {
+    "objectID": "clustering.html#interpretation-1",
+    "href": "clustering.html#interpretation-1",
+    "title": "Clustering",
+    "section": "Interpretation",
+    "text": "Interpretation\nClear horizontal patterns appear, where groups of tracks share similar feature profiles. Some tracks are consistently high in energy and loudness, reflecting more production-heavy material. Others show higher acousticness or lower instrumentalness.\nEnergy, loudness, acousticness, and instrumentalness show the strongest variation across tracks, while tempo remains relatively stable.\nThis indicates that clustering is driven more by production intensity and texture than by tempo."
+  },
+  {
+    "objectID": "clustering.html#k-means-clustering",
+    "href": "clustering.html#k-means-clustering",
+    "title": "Clustering",
+    "section": "K-means Clustering",
+    "text": "K-means Clustering\n\n\n\nK-means Clusters (k = 3)\n\n\nK-means clustering groups the tracks into three clusters and projects them into two dimensions using PCA."
+  },
+  {
+    "objectID": "clustering.html#interpretation-2",
+    "href": "clustering.html#interpretation-2",
+    "title": "Clustering",
+    "section": "Interpretation",
+    "text": "Interpretation\nThe clusters are visible, but not cleanly separated. There is overlap between groups, with tracks positioned between cluster centres.\nThis indicates that the playlist forms a continuous feature space rather than clearly distinct categories."
+  },
+  {
+    "objectID": "clustering.html#pca-representation",
+    "href": "clustering.html#pca-representation",
+    "title": "Clustering",
+    "section": "PCA Representation",
+    "text": "PCA Representation\n\n\n\nPCA of Audio Features\n\n\nThe PCA plot shows the distribution of tracks across the two most important dimensions of variation."
+  },
+  {
+    "objectID": "clustering.html#interpretation-3",
+    "href": "clustering.html#interpretation-3",
+    "title": "Clustering",
+    "section": "Interpretation",
+    "text": "Interpretation\nThe first component (PC1) reflects production intensity, while the second component (PC2) represents variation in emotional tone and vocal presence.\nTracks spread along these axes, but remain concentrated within a limited region, indicating variation within a constrained feature space."
+  },
+  {
+    "objectID": "clustering.html#key-findings",
+    "href": "clustering.html#key-findings",
+    "title": "Clustering",
+    "section": "Key Findings",
+    "text": "Key Findings\nClustering reveals that the playlist is structured, but not in a strictly categorical way.\nThe dendrogram shows hierarchical grouping, while the heatmap highlights consistent feature patterns across tracks. K-means clustering and PCA demonstrate that these groupings overlap rather than forming clearly separated clusters.\nThe most important distinctions between tracks are driven by production intensity and sonic texture, particularly reflected in energy, loudness, acousticness, and instrumentalness."
   },
   {
     "objectID": "clustering.html#connection-to-the-research-question",
     "href": "clustering.html#connection-to-the-research-question",
     "title": "Clustering",
-    "section": "Connection to the research question",
-    "text": "Connection to the research question\nEven within a diverse playlist, tracks group together based on measurable feature similarity."
-  },
-  {
-    "objectID": "clustering.html#key-insight",
-    "href": "clustering.html#key-insight",
-    "title": "Clustering",
-    "section": "Key Insight",
-    "text": "Key Insight\nSimilarity in the playlist is driven by audio features rather than genre labels."
+    "section": "Connection to the Research Question",
+    "text": "Connection to the Research Question\nAlthough the playlist appears diverse in terms of genre, language, and artist, the clustering analysis shows that this diversity is organised within a consistent feature space.\nTracks do not group according to external labels, but according to shared structural characteristics. This indicates that underlying audio features play a stronger role in defining similarity than stylistic categories.\nAs a result, the playlist exhibits underlying structural consistency, despite its apparent diversity."
   },
   {
     "objectID": "chroma.html",

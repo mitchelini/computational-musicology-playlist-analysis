@@ -2,25 +2,48 @@
 title: "Contribution"
 ---
 
-## What did we learn?
+## Overview
 
-Although the playlist appears stylistically diverse, multiple analyses reveal consistent patterns across tracks.
+This project examined whether a seemingly diverse personal playlist contains underlying structural consistency when analysed through Spotify-derived audio features.
 
-These include:
-- stable energy levels  
-- consistent tempo ranges  
-- harmonic repetition  
-- similar production characteristics  
+Across all analytical sections, a consistent pattern emerges. Despite variation in genre, language, and artist, the playlist is characterised by a constrained set of musical properties. Danceability and energy are tightly distributed, tempo remains within a limited range, harmonic structure is based on repetition, and loudness reflects consistent production standards.
 
-## Why does this matter?
+Rather than representing true diversity, the playlist shows variation within a stable musical framework.
 
-This suggests that personal music taste is not primarily genre-based, but driven by deeper structural features such as rhythm, energy, and production style.
+## What we learned
 
-## Implications
+A central finding is that personal music preference is not primarily organised around genre.
 
-- Music recommendation systems could benefit from focusing on feature similarity rather than genre labels  
-- Personal playlists may contain hidden structure despite apparent diversity  
+Across track-level features, chroma analysis, and temporal structure, the same patterns reappear: stable rhythm, consistent production intensity, and limited harmonic variation. Even when tracks differ stylistically, they occupy similar positions in feature space.
 
-## Final Insight
+The clustering analysis makes this particularly clear. Tracks do not group according to artist or genre, but according to combinations of features such as energy, acousticness, and instrumental presence. The clusters are not sharply separated, but form a continuous structure, indicating gradual variation rather than distinct categories.
 
-This playlist is not a collection of different genres — it is a **coherent system shaped by consistent musical preferences**.
+## What this reveals
+
+This project highlights a clear distinction between perceived diversity and structural similarity.
+
+From a listening perspective, the playlist feels varied. However, the analyses show that many tracks share comparable feature profiles. Differences exist, but they occur within a constrained range of musical characteristics.
+
+This is visible across multiple dimensions:
+- temporal features show consistent tempo and structure  
+- chroma features reveal repetition and stable tonal centres  
+- timbre evolves gradually rather than through sharp contrast  
+- clustering shows overlap rather than clear separation  
+
+Together, these results demonstrate that computational analysis can reveal patterns that are difficult to detect through listening alone.
+
+## Who benefits from this
+
+These findings have implications beyond this specific playlist.
+
+For music recommendation systems, they highlight the limitations of genre-based classification. Systems that rely more heavily on feature similarity are likely to better reflect how listeners actually experience and organise music.
+
+For listeners, the results provide a clearer understanding of personal taste. What feels like diversity may in fact reflect a consistent set of underlying preferences operating across different styles and artists.
+
+## Final insight
+
+Subjective listening behaviour and objective audio features do align, but not always in obvious ways.
+
+This project shows that personal music preference has a measurable structure, shaped by rhythm, production intensity, and sonic texture rather than by genre labels alone.
+
+Rather than a random collection of tracks, this playlist can be understood as a **coherent system defined by consistent musical preferences**.

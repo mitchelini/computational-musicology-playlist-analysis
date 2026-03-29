@@ -4,28 +4,42 @@
     "href": "track.html",
     "title": "Track-level Features",
     "section": "",
-    "text": "Spotify Feature Overview"
+    "text": "This section examines Spotify’s track-level audio features to determine whether my favorite songs share consistent underlying characteristics, despite their diversity in genre, language, and artist.\nThe analysis focuses on six key features: danceability, energy, valence, tempo, loudness, and popularity. Together, these features capture how music feels rhythmically, emotionally, and physically."
   },
   {
-    "objectID": "track.html#interpretation",
-    "href": "track.html#interpretation",
+    "objectID": "track.html#feature-distributions-across-the-playlist",
+    "href": "track.html#feature-distributions-across-the-playlist",
     "title": "Track-level Features",
-    "section": "Interpretation",
-    "text": "Interpretation\nMost tracks cluster in the mid-to-high danceability range (0.6–0.8) with moderate energy levels."
+    "section": "Feature Distributions Across the Playlist",
+    "text": "Feature Distributions Across the Playlist\n\n\n\nDistribution of Danceability\n\n\n\n\n\nDistribution of Tempo\n\n\nThe distributions show that most tracks fall within a relatively narrow range of danceability, with a strong concentration in the mid-to-high range. This suggests a consistent preference for rhythmically engaging music.\nTempo shows more variation, but still clusters around common ranges used in popular music. While the playlist spans multiple genres, it avoids extreme values, indicating a preference for familiarity in pacing."
   },
   {
-    "objectID": "track.html#what-this-means",
-    "href": "track.html#what-this-means",
+    "objectID": "track.html#core-relationship-energy-vs-valence",
+    "href": "track.html#core-relationship-energy-vs-valence",
     "title": "Track-level Features",
-    "section": "What this means",
-    "text": "What this means\nDespite differences in genre and language, the playlist shows a clear preference for rhythmically engaging tracks with consistent groove and pacing.\nOutliers correspond to perceptible mood shifts, rather than structural differences between genres."
+    "section": "Core Relationship: Energy vs Valence",
+    "text": "Core Relationship: Energy vs Valence\n\n\n\nEnergy vs Valence\n\n\nThis plot shows the relationship between energy and valence across all tracks.\nWhile higher energy levels tend to correlate slightly with higher valence, the spread is wide. This indicates that tracks can be energetic without necessarily being emotionally positive.\nThis variation suggests that emotional tone is flexible within the playlist, while energy remains a more consistent driver of preference."
   },
   {
-    "objectID": "track.html#key-insight",
-    "href": "track.html#key-insight",
+    "objectID": "track.html#danceability-vs-energy",
+    "href": "track.html#danceability-vs-energy",
     "title": "Track-level Features",
-    "section": "Key Insight",
-    "text": "Key Insight\nThe playlist is not genre-driven, but rhythm and energy driven."
+    "section": "Danceability vs Energy",
+    "text": "Danceability vs Energy\n\n\n\nSpotify Features of My Favorite Tracks\n\n\nThis visualization combines multiple dimensions: danceability, energy, popularity, and genre.\nMost tracks cluster within a similar region of mid-to-high danceability and moderate energy, regardless of genre or language. This reinforces the idea that personal preference is not primarily genre-driven, but instead centered around rhythmic and structural characteristics.\nOutliers exist, but they reflect shifts in mood rather than entirely different listening preferences."
+  },
+  {
+    "objectID": "track.html#feature-summary-statistics",
+    "href": "track.html#feature-summary-statistics",
+    "title": "Track-level Features",
+    "section": "Feature Summary Statistics",
+    "text": "Feature Summary Statistics\nThe table below provides summary statistics for all track-level features."
+  },
+  {
+    "objectID": "track.html#key-findings",
+    "href": "track.html#key-findings",
+    "title": "Track-level Features",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe playlist shows a clear pattern of consistency across several features.\nDanceability is relatively high and tightly distributed, indicating a strong preference for rhythmically engaging tracks. Energy is also consistently moderate to high, reinforcing this pattern.\nValence shows more variation, suggesting that emotional tone is less important than rhythmic and structural qualities. Tempo varies more widely than expected, but still avoids extreme values.\nOverall, the results indicate that personal music preference is not random, but driven by a consistent set of underlying audio characteristics — particularly rhythm and energy.\nThese patterns suggest that personal music preference is shaped more by consistent structural features than by genre or language."
   },
   {
     "objectID": "temporal.html",
@@ -67,14 +81,14 @@
     "href": "index.html",
     "title": "Background & Corpus",
     "section": "",
-    "text": "library(tidyverse) library(DT) library(janitor)\ndf &lt;- read_csv(“Computational_Musicology.csv”) %&gt;% clean_names()\ncorpus_explorer &lt;- df %&gt;% select( track_name, artist_name_s, genres, popularity, duration_ms, danceability, energy, loudness, speechiness, acousticness, liveness, valence, tempo, instrumentalness ) %&gt;% mutate(duration = round(duration_ms / 60000, 2)) %&gt;% select(-duration_ms) %&gt;% rename( track name = track_name, artist name(s) = artist_name_s )```"
+    "text": "Do my favorite songs share underlying patterns in Spotify audio features despite differences in genre, language, and artist?\nThis project explores whether personal music preferences can be explained through measurable audio characteristics, using a playlist of my 100+ favorite tracks."
   },
   {
     "objectID": "index.html#research-question",
     "href": "index.html#research-question",
     "title": "Background & Corpus",
-    "section": "Research Question",
-    "text": "Research Question\nDo my favorite songs share underlying patterns in Spotify audio features despite differences in genre, language, and artist?\nThis project explores whether personal music preferences can be explained through measurable audio characteristics, using a playlist of my 100+ favorite tracks."
+    "section": "",
+    "text": "Do my favorite songs share underlying patterns in Spotify audio features despite differences in genre, language, and artist?\nThis project explores whether personal music preferences can be explained through measurable audio characteristics, using a playlist of my 100+ favorite tracks."
   },
   {
     "objectID": "index.html#the-playlist",
@@ -88,21 +102,21 @@
     "href": "index.html#the-corpus",
     "title": "Background & Corpus",
     "section": "The Corpus",
-    "text": "The Corpus\nThe dataset spans Dutch, English, and Spanish repertoire across rap, trap, R&B, pop, and soul.\nDespite this apparent diversity in genre, language, and artist, the key question is whether these tracks share common underlying characteristics.\nThis analysis focuses on identifying patterns that may explain why these songs are consistently preferred."
+    "text": "The Corpus\nThe dataset consists of 102 tracks drawn from a personal Spotify playlist, representing individual listening preferences rather than a curated or genre-specific selection.\nThe playlist spans multiple languages (English, Dutch, and Spanish) and includes a wide range of genres such as rap, R&B, drill, pop, and soul. This diversity makes the dataset particularly suitable for investigating whether consistent patterns exist beneath apparent stylistic variation.\nAlthough the playlist appears highly diverse, certain artists occur more frequently, including The Weeknd, Tory Lanez, Frenna, and Sevn Alias. This suggests that personal preference may already exhibit some degree of repetition at the artist level.\nIt is important to note that this corpus is not a random or representative sample of music. Tracks were selected based on personal preference, which introduces bias toward songs that are more memorable, emotionally engaging, or frequently played.\nThis makes the dataset especially relevant for exploring whether subjective taste can be explained through measurable audio features."
   },
   {
     "objectID": "index.html#top-artists-genres",
     "href": "index.html#top-artists-genres",
     "title": "Background & Corpus",
     "section": "Top Artists & Genres",
-    "text": "Top Artists & Genres\nThe playlist contains a wide range of artists and genres, but some occur more frequently than others.\nThe top 5 most frequent artists are: - The Weeknd (12 tracks)\n- Tory Lanez (6 tracks)\n- Frenna (4 tracks)\n- Sevn Alias (4 tracks)\n- Brent Faiyaz (3 tracks)\nIn terms of genre, the top 3 occurring genres are: - Rap\n- R&B\n- Drill\nAt the same time, the playlist remains diverse, with many other artists and genres appearing less frequently.\nThe dataset includes songs in three main languages: - English\n- Dutch\n- Spanish"
+    "text": "Top Artists & Genres\nThe playlist contains a wide range of artists and genres, but some occur more frequently than others.\nThe top 5 most frequent artists are:\n\nThe Weeknd (12 tracks)\n\nTory Lanez (6 tracks)\n\nFrenna (4 tracks)\n\nSevn Alias (4 tracks)\n\nBrent Faiyaz (3 tracks)\n\nIn terms of genre, the top 3 occurring genres are:\n\nRap\n\nR&B\n\nDrill\n\nAt the same time, the playlist remains diverse, with many other artists and genres appearing less frequently.\nThe dataset includes songs in three main languages:\n\nEnglish\n\nDutch\n\nSpanish"
   },
   {
     "objectID": "index.html#approach",
     "href": "index.html#approach",
     "title": "Background & Corpus",
     "section": "Approach",
-    "text": "Approach\nThis project applies computational analysis to uncover patterns within the playlist.\nKey steps include: - Extracting Spotify audio features (e.g. energy, danceability, tempo, valence)\n- Analyzing distributions of these features across all tracks\n- Identifying recurring patterns and potential clusters\n- Comparing perceived diversity with measurable similarity\nThe goal is to determine whether subjective music preferences align with objective, data-driven characteristics."
+    "text": "Approach\nThis project applies computational analysis to identify patterns within a diverse personal music playlist.\nThe analysis focuses on Spotify audio features such as danceability, energy, valence, tempo, and loudness to determine whether consistent characteristics emerge across the dataset.\nFeature distributions are examined to identify common ranges and tendencies, while relationships between variables are explored to detect underlying structure.\nIn addition, clustering techniques are used to investigate whether the playlist naturally groups into sub-patterns based on audio similarity, regardless of genre or artist.\nThe goal is to determine whether subjective listening preferences align with objective, data-driven patterns that are not immediately apparent through listening alone."
   },
   {
     "objectID": "index.html#assumptions",
@@ -116,7 +130,7 @@
     "href": "index.html#full-corpus-explorer",
     "title": "Background & Corpus",
     "section": "Full Corpus Explorer",
-    "text": "Full Corpus Explorer\nThis section provides an interactive overview of the dataset, allowing exploration of tracks and their audio features.\ndatatable( corpus_explorer, options = list( pageLength = 20, scrollX = TRUE, autoWidth = TRUE ), rownames = FALSE )```"
+    "text": "Full Corpus Explorer\nThis section provides an interactive overview of the dataset, allowing exploration of tracks and their audio features."
   },
   {
     "objectID": "clustering.html",
@@ -158,42 +172,42 @@
     "href": "chroma.html",
     "title": "Chroma Features",
     "section": "",
-    "text": "Chromagram – Wanderlust"
+    "text": "Chroma features describe how harmonic energy is distributed across the twelve pitch classes of Western music (C, C#, D, Eb, E, F, F#, G, Ab, A, Bb, B). Unlike raw frequency representations, chroma features are octave-invariant: they capture which notes are active, rather than how high or low they are.\nThis makes chroma particularly suitable for analysing harmonic structure, tonal centres, and repetition within a track.\nFor this analysis, The Weeknd – Wanderlust was selected as a representative track from the corpus."
   },
   {
-    "objectID": "chroma.html#highlight-track-the-weeknd-wanderlust",
-    "href": "chroma.html#highlight-track-the-weeknd-wanderlust",
+    "objectID": "chroma.html#chromagram-wanderlust",
+    "href": "chroma.html#chromagram-wanderlust",
     "title": "Chroma Features",
-    "section": "",
-    "text": "Chromagram – Wanderlust"
+    "section": "Chromagram — Wanderlust",
+    "text": "Chromagram — Wanderlust\n\n\n\nChromagram – Wanderlust\n\n\nThe chromagram shows the intensity of each pitch class over time. Clear horizontal bands indicate pitch classes that remain active throughout the track, while vertical patterns reflect repetition of harmonic material.\nIn Wanderlust, several pitch classes are consistently active across the full duration of the track. Rather than a constantly shifting harmonic landscape, the track shows a stable distribution of pitch-class energy.\n\nInterpretation\nThe repeated vertical structures indicate a loop-based harmonic organisation. The same harmonic material returns at regular intervals, which is typical for pop and R&B production.\nAt the same time, the presence of a limited number of dominant pitch classes suggests a stable tonal centre, rather than frequent modulation between keys."
   },
   {
-    "objectID": "chroma.html#interpretation",
-    "href": "chroma.html#interpretation",
+    "objectID": "chroma.html#chord-activity-wanderlust",
+    "href": "chroma.html#chord-activity-wanderlust",
     "title": "Chroma Features",
-    "section": "Interpretation",
-    "text": "Interpretation\nThe chromagram shows recurring activation of specific pitch classes over time, indicating a stable tonal centre and repeated harmonic patterns."
+    "section": "Chord Activity — Wanderlust",
+    "text": "Chord Activity — Wanderlust\n\n\n\nChordogram – Wanderlust\n\n\nThe chordogram compares the chroma features at each moment to a set of chord templates. Brighter regions indicate a stronger match between the audio signal and a given chord.\nThe visualisation shows that a small number of chords remain active throughout the track, with relatively little variation over time.\n\nInterpretation\nRather than moving through a wide harmonic vocabulary, the track cycles through a limited set of chords. The lack of sharp transitions between different chord regions suggests that harmonic change is gradual and repetitive, rather than structurally complex.\nThis supports the idea that the harmonic structure is driven by repetition rather than progression."
   },
   {
-    "objectID": "chroma.html#what-this-means",
-    "href": "chroma.html#what-this-means",
+    "objectID": "chroma.html#key-activity-wanderlust",
+    "href": "chroma.html#key-activity-wanderlust",
     "title": "Chroma Features",
-    "section": "What this means",
-    "text": "What this means\nRather than exhibiting harmonic complexity or frequent modulation, the track relies on loop-based harmonic structures. These repeating pitch distributions align with a consistent and recognisable musical foundation."
+    "section": "Key Activity — Wanderlust",
+    "text": "Key Activity — Wanderlust\n\n\n\nKeygram – Wanderlust\n\n\nThe keygram estimates the likelihood of different tonal centres over time by comparing chroma features to key templates.\nThe plot shows a clear dominance of a single key region across the track, with only minor variation in intensity.\n\nInterpretation\nThe track remains centred around a stable tonal area, with little evidence of strong modulation. Although small fluctuations occur, they do not indicate structural key changes, but rather local variations in harmonic emphasis.\nThis reinforces the observation that the harmonic structure is consistent over time."
+  },
+  {
+    "objectID": "chroma.html#key-findings",
+    "href": "chroma.html#key-findings",
+    "title": "Chroma Features",
+    "section": "Key Findings",
+    "text": "Key Findings\nAcross all visualisations, Wanderlust exhibits a clear pattern of harmonic stability and repetition:\n\nThe chromagram shows consistent activation of a limited set of pitch classes\nThe chordogram indicates a small and repeating chord vocabulary\nThe keygram confirms a stable tonal centre with minimal modulation\n\nTogether, these results suggest that the track relies on loop-based harmonic structures rather than harmonic complexity."
   },
   {
     "objectID": "chroma.html#connection-to-the-research-question",
     "href": "chroma.html#connection-to-the-research-question",
     "title": "Chroma Features",
-    "section": "Connection to the research question",
-    "text": "Connection to the research question\nAlthough the playlist appears stylistically diverse, this suggests that harmonic behaviour may be more consistent than expected across tracks."
-  },
-  {
-    "objectID": "chroma.html#key-insight",
-    "href": "chroma.html#key-insight",
-    "title": "Chroma Features",
-    "section": "Key Insight",
-    "text": "Key Insight\nThe playlist shows harmonic consistency through stable tonal centres and repetition."
+    "section": "Connection to the Research Question",
+    "text": "Connection to the Research Question\nAlthough the playlist appears stylistically diverse, the chroma analysis suggests that this diversity does not necessarily extend to harmonic structure.\nInstead, tracks may share underlying similarities in how harmony is organised:\nthrough repetition, limited pitch-class usage, and stable tonal centres.\nThis supports the idea that a seemingly diverse playlist can still exhibit deep structural consistency."
   },
   {
     "objectID": "contribution.html",

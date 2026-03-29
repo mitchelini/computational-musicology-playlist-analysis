@@ -6,16 +6,16 @@ title: "Timbre Features"
 
 ## Interpretation
 
-The self-similarity matrix shows strong temporal continuity with subtle structural segmentation.
+The self-similarity matrix shows a largely continuous structure with only subtle block-like patterns. While the diagonal line confirms temporal progression, there are faint off-diagonal similarities indicating repeated sections, but without sharply defined boundaries.
 
 ## What this means
 
-Changes in timbre are gradual rather than abrupt. Structural transitions are driven more by layering and density than by strong timbral contrast.
+Timbral variation in the track is relatively smooth and gradual. Instead of strong contrasts between sections, changes occur through shifts in texture, layering, and production density. This results in sections that are related rather than clearly separated, giving the track a cohesive sonic identity.
 
 ## Connection to the research question
 
-This suggests that timbre is not the primary driver of variation within the playlist.
+Despite stylistic diversity within the playlist, this suggests that timbral structure follows a consistent pattern of gradual evolution rather than abrupt change. Structural variation is therefore not primarily driven by timbre.
 
 ## Key Insight
 
-Structure is shaped more by **harmonic repetition than timbral contrast**.
+The track exhibits **timbral continuity with limited contrast**, reinforcing the idea that structure is shaped more by repetition and layering than by distinct changes in sound texture.
